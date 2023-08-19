@@ -1,4 +1,4 @@
-### Proj-pet-food <h6>
+### <h1> Proj-pet-food <h1>
 ## Projeto de desenvolvimento web 
 
 ## Objetivo:

@@ -1,4 +1,4 @@
-### <center> Proj-pet-food </center>
+### "center" Proj-pet-food "center"
 ## Projeto de desenvolvimento web 
 
 ## Objetivo:

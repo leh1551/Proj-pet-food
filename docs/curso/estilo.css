@@ -1,0 +1,21 @@
+body {
+    background-image: url('logo.jpg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: black; 
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    font-family: "courier new"
+
+}
+ul{
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-family: '"courier new"';
+}

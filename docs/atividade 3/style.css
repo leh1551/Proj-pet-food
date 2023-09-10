@@ -62,7 +62,7 @@ body.dark-mode {
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   }
 .form {
-    background-color: #d6a230;
+    background-color: #fbe600ac;
     border-radius: 20px;
     box-sizing: border-box;
     height: 550px;
@@ -75,7 +75,7 @@ body.dark-mode {
 h1{
     align-items: center;
     text-align: center;
-    color: #000;
+    color: #707070;
     padding: 0;
     font-family: Georgia, 'Times New Roman', Times, serif ;
 }  
@@ -87,7 +87,7 @@ h1{
   }
   
   .subtitle {
-    color: #eee;
+    color: #000000;
     font-family: sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -121,7 +121,7 @@ h1{
   }
   
   .cut {
-    background-color: #b97f00;
+    background-color:#fbe600;
     border-radius: 10px;
     height: 10px;
     left: 20px;
@@ -167,7 +167,7 @@ h1{
   }
   
   .submit {
-    background-color: rgb(92, 59, 10);
+    background-color: rgb(118, 213, 89);
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
@@ -183,3 +183,45 @@ h1{
   .submit:active {
     background-color: rgb(90, 61, 7);
   }
+
+
+
+  nav {
+    background-color: #fbe600; /* Cor de fundo da barra */
+  
+  
+}
+
+ul {
+    list-style-type: none; /* Remova os marcadores da lista */
+    padding: 0; /* Remova o preenchimento padrão da lista */
+    margin: 0; /* Remova as margens padrão da lista */
+    overflow: hidden; /* Evite que os elementos flutuem para fora da barra */
+}
+
+li {
+    float: left; /* Alinhe os itens da lista horizontalmente */
+}
+img { 
+width: 130px;
+height: 100px;
+float: left ;
+margin-left: 850%;
+border-radius: 50%;
+    
+}
+
+
+li a {
+    display: block;
+    color: #000000; /* Cor do texto do link */
+    text-align: center; /* Alinhe o texto ao centro */
+    padding: 30px 35px; /* Espaçamento interno do link */
+    font-size: 30px;
+    text-decoration: none; /* Remova a sublinhado do link */
+    font-family: monospace;
+}
+
+li a:hover {
+    background-color: #fbe600; /* Cor de fundo ao passar o mouse */
+}

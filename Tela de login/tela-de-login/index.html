@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/Proj-pet-food/Tela de login/tela-de-login/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="content primeiro-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="title title-primeiro">Faça login!</h2>
+                <p class="description description-primeira">Entre com seus dados</p>
+                <p class="description description-primeira">A Pet Food fica feliz em ver você novamente!</p>
+                <button id="signin" class="btn btn-primeiro">Realizar login</button>
+            </div>
+            <div class="segunda-coluna">
+                <h2 class="title title-segundo">Novo aqui? Crie sua conta!</h2>
+                <p class="description description-segunda">Ficamos contentes em receber você!</p>
+                <p class="description description-segunda">Crie sua conta</p>
+                <form class="form">                    
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-user mudar-icone"></i>
+                        <input type="text"  placeholder=" Nome">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-envelope mudar-icone"></i>
+                        <input type="email" placeholder=" E-mail">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-lock mudar-icone"></i>
+                        <input type="password" placeholder=" Senha">
+                    </label>
+                    <button class="btn btn-segundo">Criar</button>
+                </form>
+            </div>
+        </div>
+        <div class="content segundo-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="title title-primeiro">Crie seu cadastro!</h2>
+                <p class="descripton description-primeira">Comece suas compras!</p>
+                <button id="signup" class="btn btn-primeiro">Criar</button>
+            </div>
+            <div class="segunda-coluna">
+                <h2 class="title title-segundo">Digite seus dados</h2>
+                <p class="description description-segunda">Ficamos contentes em receber você!</p>
+                <form class="form form">
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-user mudar-icone"></i>
+                        <input type="text"  placeholder=" Nome">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fa-solid fa-lock mudar-icone"></i>
+                        <input type="password" placeholder=" Senha">
+                    </label>
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-segundo">Fazer login</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

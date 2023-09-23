@@ -188,8 +188,8 @@ h1{
 
 
   nav {
-    background-color: #7B331B; /* Cor de fundo da barra */
-   font-family:'Sofia', sans-serif;
+  background-color: #7B331B; /* Cor de fundo da barra */
+  font-family:'Sofia', sans-serif;
   font-weight: bold;
   }
 
@@ -206,10 +206,9 @@ li {
 img { 
 width: 130px;
 height: 100px;
-float: left ;
+float: left;
 margin-left: 850%;
-border-radius: 50%;
-    
+border-radius: 50%;   
 }
 
 

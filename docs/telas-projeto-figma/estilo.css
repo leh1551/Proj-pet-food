@@ -14,8 +14,12 @@ h1{
 
 }
 ul{
-    color: black;
-    text-align: center;
+    text-align: left;
     font-size: 25px;
-    font-family: '"courier new"';
+    font-family: sans-serif;
+}
+li{
+    color: white;
+    font-size: white;
+    border: 5px;
 }

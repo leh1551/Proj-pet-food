@@ -2,8 +2,6 @@ body {
     background-image: url('fundo.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #5c5656;
-    color: #615e5e; 
 }
 
 h1{
@@ -11,24 +9,23 @@ h1{
     margin-top: 50px;
     font-size: 100px;
     color: rgb(0, 0, 0);
-    font-family: "courier new"
+    font-family: sans-serif;
 }
 h2{
-    font-family: "courier new" ;
+    font-family: sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 40px
-    
+    font-size: 40px;
+    text-align: center; 
 }
 h3 {
 color: black;
 text-align: center;
 font-size: 50px;
-font-family: '"courier new"';
+font-family: sans-serif;
 
 }
 h4 {
 color: black;
 font-family: courier ;
 font-size: 25px;
-
 }

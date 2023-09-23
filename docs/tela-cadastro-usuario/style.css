@@ -62,7 +62,7 @@ body.dark-mode {
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   }
 .form {
-    background-color: #fbe600ac;
+    background-color: #7B331B;
     border-radius: 20px;
     box-sizing: border-box;
     height: 700px;
@@ -75,9 +75,9 @@ body.dark-mode {
 h1{
     align-items: center;
     text-align: center;
-    color: #707070;
+    color: black;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-family: sans-serif;
 }  
   .title {
     color: #eee;
@@ -121,7 +121,7 @@ h1{
   }
   
   .cut {
-    background-color:#fbe600;
+    background-color:#7B331B;
     border-radius: 10px;
     height: 10px;
     left: 20px;
@@ -142,7 +142,7 @@ h1{
   }
   
   .placeholder {
-    color: #65657b;
+    color: black;
     font-family: sans-serif;
     left: 20px;
     line-height: 14px;
@@ -159,7 +159,7 @@ h1{
   }
   
   .input:not(:placeholder-shown) ~ .placeholder {
-    color: #808097;
+    color: black;
   }
   
   .input:focus ~ .placeholder {
@@ -167,11 +167,11 @@ h1{
   }
   
   .submit {
-    background-color: rgb(118, 213, 89);
+    background-color: #eb997e;
     border-radius: 12px;
     border: 0;
     box-sizing: border-box;
-    color: #eee;
+    color: black;
     cursor: pointer;
     font-size: 18px;
     height: 50px;
@@ -187,8 +187,7 @@ h1{
 
 
   nav {
-    background-color: #fbe600; /* Cor de fundo da barra */
-  
+    background-color: #7B331B; /* Cor de fundo da barra */
   
 }
 
@@ -223,5 +222,5 @@ li a {
 }
 
 li a:hover {
-    background-color: #fbe600; /* Cor de fundo ao passar o mouse */
+    background-color: #7B331B; /* Cor de fundo ao passar o mouse */
 }

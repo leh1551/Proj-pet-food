@@ -90,28 +90,40 @@ body {
     align-self: center;
     border-width: 0px;
     margin-top: 1rem;
+    text-decoration: none;
 }
 
 .btn-primeiro {
     background-color: #7B331B;
     border: 1px solid #7B331B;
     transition: background-color .5s;
+    text-decoration: none;
 }
 
 .btn-primeiro:hover {
     background-color: white;
-    border: 1px solid #7B331B
+    border: 1px solid #7B331B;
+    text-decoration: none;
 }
 
 .btn-segundo {
     background-color: #7B331B;
     border: 1px solid #7B331B;
     transition: background-color .5s;
+    text-decoration: none;
+}
+
+.btn-terceiro{
+    background-color: #7B331B;
+    border: 1px solid #7B331B;
+    text-decoration: none;
+    transition: background-color .5s;
 }
 
 .btn-segundo:hover  {
     background-color: white;
-    border: 1px solid #7B331B
+    border: 1px solid #7B331B;
+    text-decoration: none;
 }
 
 .primeira-coluna {
@@ -132,6 +144,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 55%;
+    text-decoration: none;
 }
 
 .form input {
@@ -139,6 +152,7 @@ body {
     border: none;
     background-color: #ECF0F1;
     width: 100%;
+    text-decoration: none;
 }
 
 .label-input {

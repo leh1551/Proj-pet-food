@@ -1,6 +1,6 @@
 /* Estilos para o modo noturno */
 body.dark-mode {
-    background-color: #000000;
+    background-color: #979797;
     color: #ffffff; 
 }
 
@@ -178,6 +178,7 @@ h1{
     margin-top: 38px;
     text-align: center;
     width: 100%;
+    font-weight: bold;
   }
   
   .submit:active {
@@ -188,8 +189,9 @@ h1{
 
   nav {
     background-color: #7B331B; /* Cor de fundo da barra */
-  
-}
+   font-family:'Sofia', sans-serif;
+  font-weight: bold;
+  }
 
 ul {
     list-style-type: none; /* Remova os marcadores da lista */
@@ -218,7 +220,7 @@ li a {
     padding: 30px 35px; /* Espaçamento interno do link */
     font-size: 30px;
     text-decoration: none; /* Remova a sublinhado do link */
-    font-family: monospace;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 li a:hover {

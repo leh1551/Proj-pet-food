@@ -209,6 +209,7 @@ height: 100px;
 float: left;
 margin-left: 850%;
 border-radius: 50%;   
+
 }
 
 
@@ -225,3 +226,4 @@ li a {
 li a:hover {
     background-color: #7B331B; /* Cor de fundo ao passar o mouse */
 }
+body{margin: 0;}

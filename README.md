@@ -2,9 +2,8 @@
 ## Projeto de desenvolvimento web 
 
 ## Objetivo:
-Desenvolver um projeto web, no qual será um site para compras de alimentos para animais exóticos.
-
-Linguagens de programação que serão utilizadas: 
+Desenvolver um projeto de desenvolvimenton web, no qual será um *site*.
+Que envovera: 
 -Html
 -CSS
 -Java

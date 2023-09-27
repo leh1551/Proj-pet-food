@@ -1,0 +1,55 @@
+/* style.css */
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #7b331b;
+    padding: 3px;
+}
+
+header h1 {
+    border: none;
+    justify-content: center;
+    margin-left: 3.5%;
+    align-items: center;
+}
+.titulo {
+    float: left;
+}
+
+input {
+    border-radius: 15px;
+    margin-left: 5%;    
+}
+
+.login {
+    margin-left: 5%;
+}
+
+.patchon {
+    width: 7%;
+    height: 7%;
+    float: right;
+    margin-right: 2%;
+}
+
+.btnBuscar {
+    border-radius: 15px;
+}
+
+.btn {
+    display: flex;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.corpo-texto {
+    background-color: gray;
+}

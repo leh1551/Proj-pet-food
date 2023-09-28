@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 body .carde{
     display: flex;
     justify-content: center;
@@ -18,7 +17,9 @@ body .carde{
     height: 260px;
     border-radius: 30px;
     box-shadow: 4px 4px 12px #aaaa;
-    align-items: center;
+    display: inline-block;
+    margin: 102px;
+    
 }
 .card img{
    width: 100%;

@@ -1,86 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>  
+    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
-    <body>
-        <nav>
-            <ul>
-                <li><a href="#">Pet food</a></li>
-                <li class="img"><img src="imagem.jpg"></li>
-            </ul>
-        </nav>        
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Pet food</a></li>
+            <li class="img"><img src="imagem.jpg" alt="Descrição da imagem">></li>
+        </ul>
+    </nav>
     <p>
-        <div >
-   
-            <label class="switch">
-                <input type="checkbox"  id="toggle-mode">
-                <span class="slider"></span>
-            </label>
-            <!-- Seu conteúdo HTML aqui -->
-            <script src="script.js"></script>
-            </div>
+    <div>
+
+        <label class="switch">
+            <input type="checkbox" id="toggle-mode">
+            <span class="slider"></span>
+        </label>
+        <!-- Seu conteúdo HTML aqui -->
+        <script src="script.js"></script>
+    </div>
     </p>
 
     <h1>Cadastro de Usuário</h1>
-    <form action="https://webhook.site/b5de5359-7539-440d-875e-2c4d2086a259" method="post" onsubmit="return validarForm()">
+    <form action="https://webhook.site/b5de5359-7539-440d-875e-2c4d2086a259" method="post"
+        onsubmit="return validarForm()">
         <div class="form">
-        <div class="subtitle">Vamos fazer seu cadastro</div>
-        <div class="input-container ic1">
-        <label for="nome" class="placeholder"></label>
-       <!--  <div class="cut"></div>--> 
-        <input type="text" id="nome" class="input" placeholder="Nome:" name="nome" required>
-    </div>      
+            <div class="subtitle">Vamos fazer seu cadastro</div>
+            <div class="input-container ic1">
+                <label for="nome" class="placeholder"></label>
+                <!--  <div class="cut"></div>-->
+                <input type="text" id="nome" class="input" placeholder="Nome:" name="nome" required>
+            </div>
 
-    <div class="input-container ic2">
-        <label for="email" class="placeholder" ></label>
-        <!-- <div class="cut"></div>--> 
-        <input type="email" id="email" class="input" placeholder="Email:" name="email" required>
-    </div>
+            <div class="input-container ic2">
+                <label for="email" class="placeholder"></label>
+                <!-- <div class="cut"></div>-->
+                <input type="email" id="email" class="input" placeholder="Email:" name="email" required>
+            </div>
 
-    <div class="input-container ic2">
-        <label for="cpf" class="placeholder"></label>
-       <!--<div class="cut"></div>--> 
-        <input type="text" id="cpf" class="input" step="15" placeholder="Cpf:" name="cpf" required>
-    </div>
+            <div class="input-container ic2">
+                <label for="cpf" class="placeholder"></label>
+                <!--<div class="cut"></div>-->
+                <input type="text" id="cpf" class="input" placeholder="CPF:" name="cpf" required>
 
-    <div class="input-container ic2">
-        <label for="rg" class="placeholder" ></label>
-      <!-- <div class="cut"></div>--> 
-        <input type="number" id="rg" class="input" placeholder="Rg:" name="rg" required>
-    </div>
+            </div>
 
-    <div class="input-container ic2">
-        <label for="Data de nascimento" class="placeholder" ></label>
-      <!--  <div class="cut"></div>--> 
-        <input type="date" id="data_nascimento" class="input" placeholder="Data de Nascimento" name="data de nascimento" required>
-    </div>
+            <div class="input-container ic2">
+                <label for="rg" class="placeholder"></label>
+                <!-- <div class="cut"></div>-->
+                <input type="number" id="rg" class="input" placeholder="Rg:" name="rg" required>
+            </div>
+
+            <div class="input-container ic2">
+                <label for="DataDeNascimento" class="placeholder">Data de Nascimento:</label>
+                <!--  <div class="cut"></div>-->
+                <input type="date" id="data_nascimento" class="input" placeholder="Data de Nascimento"
+                    name="data de nascimento" required>
+            </div>
 
 
-    <div class="input-container ic2">
-        <label for="celular" class="placeholder"></label>
-        <!--<div class="cut"></div>--> 
-        <input type="tel" id="celular" class="input" placeholder="Celular:" name="celular" required>
-    </div>
+            <div class="input-container ic2">
+                <label for="celular" class="placeholder"></label>
+                <!--<div class="cut"></div>-->
+                <input type="tel" id="celular" class="input" placeholder="Celular:" name="celular" required>
+            </div>
 
-    <div class="input-container ic2">
-        <label for="senha" class="placeholder"></label>
-       <!-- <div class="cut cut-short"></div>--> 
-        <input type="password" id="senha" class="input" placeholder="Senha:" name="senha" required>
-    </div>
+            <div class="input-container ic2">
+                <label for="senha" class="placeholder"></label>
+                <!-- <div class="cut cut-short"></div>-->
+                <input type="password" id="senha" class="input" placeholder="Senha:" name="senha" required>
+            </div>
 
-        <div class="input-container ic2">
-        <label for="confirm_senha" class="placeholder"></label>
-       <!-- <div class="cut cut-short"></div>--> 
-        <input type="password" id="confirm_senha" class="input" placeholder="Confirme a senha:" name="confirm_senha" required>
-    </div>
+            <div class="input-container ic2">
+                <label for="confirm_senha" class="placeholder"></label>
+                <!-- <div class="cut cut-short"></div>-->
+                <input type="password" id="confirm_senha" class="input" placeholder="Confirme a senha:"
+                    name="confirm_senha" required>
+            </div>
 
-      <button  type="submit" value="Cadastrar" class="submit">Cadrastar</button>
-    </div>
+            <button type="submit" value="Cadastrar" class="submit">Cadrastar</button>
+        </div>
     </form>
 
     <script>
@@ -114,4 +120,5 @@
         }
     </script>
 </body>
+
 </html>

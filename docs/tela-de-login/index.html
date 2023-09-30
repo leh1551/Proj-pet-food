@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
+
 <body>
     <div class="container">
         <div class="content primeiro-conteudo">
@@ -21,8 +23,14 @@
                 <h2 class="title title-segundo">Novo aqui? Crie sua conta!</h2>
                 <p class="description description-segunda">Ficamos contentes em receber você!</p>
                 <p class="description description-segunda">Crie sua conta</p>
-                <form class="form">                    
-                    <button class="btn btn-terceiro"><a href="https://leh1551.github.io/Proj-pet-food/tela-cadastro-usuario/";  style="color: black;">Criar</a></button>
+                <form class="form">
+                    <button class="btn btn-terceiro" type="button"
+                        onclick="window.location.href='https://leh1551.github.io/Proj-pet-food/tela-cadastro-usuario/'"
+                        style="color: black">
+                        Criar
+                    </button>
+
+
                 </form>
             </div>
         </div>
@@ -36,22 +44,23 @@
                 <h2 class="title title-segundo">Digite seus dados</h2>
                 <p class="description description-segunda">Ficamos contentes em receber você!</p>
                 <form class="form form">
-                    <label class="label-input" for="">
+                    <label class="label-input">
                         <i class="fa-solid fa-user mudar-icone"></i>
-                        <input type="text"  placeholder=" Nome">
+                        <input type="text" placeholder="Nome">
                     </label>
-                    
-                    <label class="label-input" for="">
+
+                    <label class="label-input">
                         <i class="fa-solid fa-lock mudar-icone"></i>
-                        <input type="password" placeholder=" Senha">
+                        <input type="password" placeholder="Senha">
                     </label>
                     <a class="password" href="#">Esqueceu sua senha?</a>
                     <button class="btn btn-segundo">Fazer login</button>
                 </form>
             </div>
         </div>
-        </div>
     </div>
+
     <script src="app.js"></script>
 </body>
+
 </html>

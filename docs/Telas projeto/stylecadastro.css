@@ -180,12 +180,11 @@ h1{
     width: 100%;
     font-weight: bold;
   }
-  
+
+ 
   .submit:active {
     background-color: rgb(90, 61, 7);
   }
-
-
 
   nav {
   background-color: #7B331B; /* Cor de fundo da barra */

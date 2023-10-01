@@ -3,54 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Bem-vindo!</title>
 </head>
 <body>
-    <header>
-        
-        <form class="form">
-            <div ><img class="image" src="imagem.jpg" alt=""></div>
-            <button>
-                <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                    <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </button>
-            <input class="input" placeholder="Buscar" required="" type="text" >
-            <button class="reset" type="reset">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
-        </form>
- 
-    <div class="barra">
-           <button class="button"><a href="#" ></a>Alimento vivos</button>
-           <button class="button"><a href="#"></a>Alimento congelado</button>
-           <button class="button"><a href="#"> </a>Outros alimentos</button>
-           <button class="button"><a href="#"></a>Sobre nós</button>
-    </div>
-     </header>
-     <main>
-        <div> Bem-vindo à Pet Food, onde atendemos às necessidades alimentares de animais exóticos com paixão. Reconhecemos a importância de cuidados especiais e dietas específicas para essas criaturas únicas. Nossa seleção abrange uma variedade de espécies exóticas, de répteis a mamíferos, promovendo saúde e bem-estar. Além de produtos de alta qualidade. 
+    <div>
+        <header>
+        <h1 class="titulo">Pet Food</h1>
+        <h1>
+            <!--inicio do codigo do elemento buscar-->
+            <div class="search"> <style>
+                /* Estilize links para que não mudem de cor quando clicados */
+                .button1 a:link,
+                .button1 a:visited {
+                  color: #000000; /* Cor do link (azul, por exemplo) */
+               
+                }
+              </style>
+            <form>
+            <input type="text" class="search__input" id="busca" placeholder="Buscar...">
+                    <!--butão buscar-->
+            <button class="button" type="submit">Buscar</button>
+                     <!--fim butão buscar-->
+            <button class="button1" type="submit"><a href="">Login</a></button>
+            
+            <img class="patchon" src="imagem.jpg" alt="">
+            </form>    
+        </div>       <!--fim do codigo do elemento buscar-->  
+        </h1>
+                            <!--inicio do codigo dos butoes cabeçalho-->
+        <h2 class="btn">
+            <style>
+                /* Estilize links para que não mudem de cor quando clicados */
+               a:link,
+                a:visited {
+                  color: #eeeeee; /* Cor do link (azul, por exemplo) */
+               
+                }
+              </style>
+        <button ><a href="#secao-de-destino">Sobre</a></button>
+        <button ><a href="#secao-de-destino1">Animais vivos</a></button>
+        <button ><a href="#secao-de-destino2">Animais congelados</a></button>
+        <button ><a href="#secao-de-destino3">Outros alimentos</a></button>
+        </h2>
+                                <!--fim do codigo dos butoes cabeçalho-->
+                                
+                                <!--inicio do card-->
+    </header>
+    <!--texto sobre nos-->
+    <div id="secao-de-destino" class="temas"><p><strong>Sobre</strong></p></div>
+    <main>
+        <div class="texto"> Bem-vindo à Pet Food, onde atendemos às necessidades alimentares de animais exóticos com paixão. Reconhecemos a importância de cuidados especiais e dietas específicas para essas criaturas únicas. Nossa seleção abrange uma variedade de espécies exóticas, de répteis a mamíferos, promovendo saúde e bem-estar. Além de produtos de alta qualidade. 
             Junte-se a nós nessa jornada de cuidado, descoberta e conexão com o reino animal extraordinário. Venha para a Pet Food, unindo paixão e bem-estar animal!
        
     </main>
-</body>
-<body class="carde">
-<div class="card">
-        <img src="racao.jpg">
- 
-        <div>
-<h1>Ração</h1>
-<h2>Ração de qualidade</h2>
-<span>R$ 5,50</span>
-<button>Comprar</button>
-</div>
-         </div>
-         <div class="card">
+      <!--texto sobre nos-->
+    <div>
+        <body class="carde"><div id="secao-de-destino1" class="temas"><p><strong>Animais vivos</strong></p></div>
+        <p class="corpo-texto"><div class="card">
             <img src="racao.jpg">
-     
+            
             <div>
     <h1>Ração</h1>
     <h2>Ração de qualidade</h2>
@@ -77,6 +89,81 @@
             <span>R$ 5,50</span>
             <button>Comprar</button>
             </div>
+                    
+                   
+</body>
+    </div>
+                       <!--fim do card-->
+                       <!--inicio card 2-->
+            <p> <div>
+                <body class="carde"><div id="secao-de-destino2" class="temas"><p><strong>Animais congelados</strong></p></div>
+                <p class="corpo-texto"><div class="card">
+                    <img src="racao.jpg">
+                    
+                    <div>
+            <h1>Ração</h1>
+            <h2>Ração de qualidade</h2>
+            <span>R$ 5,50</span>
+            <button>Comprar</button>
+            </div>
                      </div>
+                     <div class="card">
+                        <img src="racao.jpg">
+                 
+                        <div>
+                <h1>Ração</h1>
+                <h2>Ração de qualidade</h2>
+                <span>R$ 5,50</span>
+                <button>Comprar</button>
+                </div>
+                         </div>
+                         <div class="card">
+                            <img src="racao.jpg">
+                     
+                            <div>
+                    <h1>Ração</h1>
+                    <h2>Ração de qualidade</h2>
+                    <span>R$ 5,50</span>
+                    <button>Comprar</button>
+                    </div>
+                            
+                           
+        </body>
+            </div></p>
+            <!--fim card 2-->
+            <!--inicio card 3-->
+<p><body class="carde"><div id="secao-de-destino3" class="temas"><p ><strong>Outros alimentos</strong></p></div>
+    <p class="corpo-texto"><div class="card">
+        <img src="racao.jpg">
+        
+        <div>
+<h1>Ração</h1>
+<h2>Ração de qualidade</h2>
+<span>R$ 5,50</span>
+<button>Comprar</button>
+</div>
+         </div>
+         <div class="card">
+            <img src="racao.jpg">
+     
+            <div>
+    <h1>Ração</h1>
+    <h2>Ração de qualidade</h2>
+    <span>R$ 5,50</span>
+    <button>Comprar</button>
+    </div>
+             </div>
+             <div class="card">
+                <img src="racao.jpg">
+         
+                <div>
+        <h1>Ração</h1>
+        <h2>Ração 20</h2>
+        <span>R$ 5,50</span>
+        <button>Comprar</button>
+        </div>
+                
+               
+</body></p>
 </body>
 </html>

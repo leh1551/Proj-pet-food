@@ -12,26 +12,58 @@
 
 <body>
     <header>
-        <div><img class="image" src="imagem.jpg" alt=""></div>
-
-        <div class="barra">
-            <button class="button" type="button"> Alimento vivos</button>
-            <button class="button" type="button"> Alimento congelado</button>
-            <button class="button" type="button"> Outros alimentos</button>
-            <button class="button" type="button"> Sobre nós</button>
-        </div>
+        <h1 class="titulo">Pet Food</h1>
+        <h1>
+            <!--inicio do codigo do elemento buscar-->
+            <div class="search"> <style>
+                /* Estilize links para que não mudem de cor quando clicados */
+                .button1 a:link,
+                .button1 a:visited {
+                  color: #000000; /* Cor do link (azul, por exemplo) */
+               
+                }
+              </style>
+            <form>
+            <input type="text" class="search__input" id="busca" placeholder="Buscar...">
+                    <!--butão buscar-->
+            <button class="button" type="submit">Buscar</button>
+                     <!--fim butão buscar-->
+          
+            
+            <img class="patchon" src="imagem.jpg" alt="">
+            </form>    
+        </div>       <!--fim do codigo do elemento buscar-->  
+        </h1>
+                            <!--inicio do codigo dos butoes cabeçalho-->
+        <h2 class="btn">
+            <style>
+                /* Estilize links para que não mudem de cor quando clicados */
+               a:link,
+                a:visited {
+                  color: #eeeeee; /* Cor do link (azul, por exemplo) */
+               
+                }
+              </style>
+        <button ><a href="#secao-de-destino">Sobre</a></button>
+        <button ><a href="#secao-de-destino1">Animais vivos</a></button>
+        <button ><a href="#secao-de-destino2">Animais congelados</a></button>
+        <button ><a href="#secao-de-destino3">Outros alimentos</a></button>
+        </h2>
+                                <!--fim do codigo dos butoes cabeçalho-->
+                                
+                                <!--inicio do card-->
     </header>
 
-    <h1>Pedido Confirmado</h1>
+    <h1 class="title">Pedido Confirmado</h1>
     <main class="pedido realizado">
         <div class="texto1">
             <p>Seu pedido foi realizado com sucesso.</p>
             <p>Em breve você receberá um e-mail no endereço <a href="mailto:comprador@gmail.com">comprador@gmail.com</a> com todos os detalhes do pedido.</p>
-            <button>Pagamento Concluído</button>
+            <button class="botão">Pagamento Concluído</button>
         </div>
     
         <div class="texto2">
-            <p>Informações do Pedido:</p>
+            <p><strong>Informações do Pedido:</strong></p>
             <p>ID: 1515151515</p>
             <p>Total: R$ 64,00</p>
             <p>Forma de pagamento: Cartão de crédito</p>

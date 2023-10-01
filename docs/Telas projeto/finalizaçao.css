@@ -3,6 +3,7 @@ header {
     padding: 20px 40px;
     position: relative;
     margin: auto;
+    height: 200px;
 }
 
 .barra button{
@@ -10,7 +11,7 @@ header {
     border-radius: 10px;
     color: #fbe600;
     background-color: #7B331B;
-    color: #fff;
+    color: #ffffff;
     font-size: 15px;
     
    
@@ -49,7 +50,7 @@ header {
 
 
 .image{
-  width: 130px;
+  width: 1px;
   height: 130px;
   float: left;
   margin-left: 200%;
@@ -159,10 +160,11 @@ transform: translateY(-1px);
                       /*fim butao buscar class button*/
 
 .patchon {
-  width: 7%;
-  height: 7%;
+  width: 130px;
+  height: 100px;
   float: right;
-  margin-right: -3%;
+  margin-right: -850%;
+  border-radius: 50%;
 }
                       /*inicio do codigo dos butoes cabeçalho*/
 .btn button {

@@ -38,7 +38,7 @@ header h1 {
     width: 10em;
     transition: all ease-in-out .5s;
     margin-right: 1rem;
-    margin-left: 10%;
+    margin-left: center;
   }
   
   .search__input:hover, .search__input:focus {
@@ -74,12 +74,17 @@ header h1 {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  margin-left: -40%;
+
 }
+
+  
+
 
  .button:hover {
   background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
+  box-shadow: 0px 25px 30px rgba(46, 229, 157, 0.4);
+  color: #000000;
   transform: translateY(-7px);
 }
 
@@ -102,7 +107,7 @@ header h1 {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  margin-left: 10%;
+  margin-left: 45%;
 }
 
  .button1:hover {
@@ -116,10 +121,11 @@ header h1 {
   transform: translateY(-1px);}
                             /*fim do codigo do elemento buscar*/
 .patchon {
-    width: 7%;
+    width: 10%;
     height: 7%;
     float: right;
-    margin-right: -3%;
+    margin-right: -40%;
+    border-radius:50%;
 }
                         /*inicio do codigo dos butoes cabeçalho*/
 .btn button {

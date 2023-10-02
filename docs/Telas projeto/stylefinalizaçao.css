@@ -3,7 +3,7 @@ header {
     padding: 20px 40px;
     position: relative;
     margin: auto;
-    height: 200px;
+    height: 125px;
 }
 
 .barra button{
@@ -20,7 +20,7 @@ header {
   
   margin: auto;
   width: 600px;
-  height: 200px;
+  height: 250px;
   background-color: #7B331B;
   color: #fff;
   padding: 20px;
@@ -71,7 +71,7 @@ header {
 }
 
 .texto2{
-  font-size: 14px;
+  font-size: 17px;
 }
 
 body{margin: 0;}
@@ -86,9 +86,13 @@ header h1 {
   justify-content: center;
   margin-left: 3.5%;
   align-items: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-top: 20px;
 }
 .titulo {
   float: left;
+  margin-top: 20px;
 }
 
 .search {
@@ -163,27 +167,10 @@ transform: translateY(-1px);
   width: 130px;
   height: 100px;
   float: right;
-  margin-right: -850%;
+  margin-left: 900px;
   border-radius: 50%;
 }
                       /*inicio do codigo dos butoes cabeçalho*/
-.btn button {
-font-size: 18px;
-color: #e2b3b3;
-font-family: inherit;
-font-weight: 800;
-cursor: pointer;
-position: relative;
-border: none;
-background: none;
-text-transform: uppercase;
-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-transition-duration: 400ms;
-transition-property: color;
-margin: 30px;
-outline: none;
-
-}
 
 .btn button:focus,
 button:hover {

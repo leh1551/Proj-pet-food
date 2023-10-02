@@ -182,28 +182,36 @@ h1{
   }
   .finished {
     background-color: #eb997e;
-      border-radius: 12px;
-      border: 0;
-      box-sizing: border-box;
-      color: black;
-      cursor: pointer;
-      font-size: 18px;
-      height: 50px;
-      margin-top: 38px;
-      text-align: center;
-      width: 100%;
-      font-weight: bold;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    height: 50px;
+    margin-top: 38px;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    text-shadow: none;
+    display: inline-block;
+    align-items: flex-start;
+    padding: 15px 6px;
+    text-decoration: none;
+  }
+  .btn{
+    text-decoration: none;
+    font-size: 18px;
   }
 
- 
   .submit:active {
     background-color: rgb(90, 61, 7);
   }
 
   nav {
   background-color: #7B331B; /* Cor de fundo da barra */
-  font-family:'Sofia', sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bold;
+  height: 125px;
   }
 
 ul {
@@ -220,7 +228,7 @@ img {
 width: 130px;
 height: 100px;
 float: left;
-margin-left: 850%;
+margin-left: 700%;
 border-radius: 50%;   
 
 }

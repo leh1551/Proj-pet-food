@@ -7,7 +7,10 @@ body {
 header {
     text-align: center;
     background-color: #7b331b;
-    padding: 3px;
+    padding: 20px 40px;
+    position: relative;
+    margin: auto;
+    height: 125px;
 }
 
 header h1 {
@@ -29,13 +32,13 @@ header h1 {
                              /*inicio do codigo do elemento buscar*/
   .search__input {
     font-family: inherit;
-    font-size: 22px;
+    font-size: 25px;
     background-color: #f4f2f2;
     border: none;
     color: #646464;
     padding: 0;
     border-radius: 30px;
-    width: 10em;
+    width: 28%;
     transition: all ease-in-out .5s;
     margin-right: 1rem;
     margin-left: center;
@@ -60,7 +63,6 @@ header h1 {
   }
                         /*butao buscar class button*/
  .button {
-
   padding: 0.7em 1.2em;
   font-size: 10px;
   text-transform: uppercase;
@@ -75,11 +77,9 @@ header h1 {
   cursor: pointer;
   outline: none;
   margin-left: -40%;
+  text-decoration: none;
 
 }
-
-  
-
 
  .button:hover {
   background-color: #23c483;
@@ -98,7 +98,6 @@ header h1 {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 200;
   color: #000;
   background-color: #fff;
   border: none;
@@ -107,7 +106,8 @@ header h1 {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  margin-left: 45%;
+  margin-left: 340px;
+  text-decoration: none;
 }
 
  .button1:hover {
@@ -115,6 +115,7 @@ header h1 {
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
+  text-decoration: none;
 }
 
 .button1:active {
@@ -124,11 +125,11 @@ header h1 {
     width: 10%;
     height: 7%;
     float: right;
-    margin-right: -40%;
+    margin-right: auto;
     border-radius:50%;
 }
                         /*inicio do codigo dos butoes cabeçalho*/
-.btn button {
+.btn{
   font-size: 18px;
   color: #aa9292;
   font-family: inherit;
@@ -143,12 +144,15 @@ header h1 {
   transition-property: color;
   margin: 30px;
   outline: none;
- 
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto;
 }
 
 .btn button:focus,
 button:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 .btn button:focus:after,
@@ -169,6 +173,7 @@ button:hover:after {
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
+  text-decoration: none;
 }
 
                         /*fim do codigo dos butoes cabeçalho*/
@@ -243,7 +248,7 @@ main div{
     border-radius: 10px;
 }
 .texto{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: sans-serif;
     padding: auto;
     font-size: 19px;
 }

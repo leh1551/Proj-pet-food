@@ -1,0 +1,234 @@
+header {
+    background-color: #7B331B; /* Cor de fundo da barra */
+    padding: 20px 40px;
+    position: relative;
+    margin: auto;
+    height: 200px;
+}
+
+.barra button{
+
+    border-radius: 10px;
+    color: #fbe600;
+    background-color: #7B331B;
+    color: #ffffff;
+    font-size: 15px;
+    
+   
+    
+}main div{
+  
+  margin: auto;
+  width: 600px;
+  height: 200px;
+  background-color: #7B331B;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  
+
+
+}.button {
+  color: #ecf0f1;
+  font-size: 17px;
+  background-color: #e67e22;
+  border: 1px solid #f39c12;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 6px 0px #d35400;
+  transition: all .1s;
+  margin-right: 170px;
+  
+ }
+ 
+ .button:active {
+  box-shadow: 0px 2px 0px #d35400;
+  position: relative;
+  top: 2px;
+ }
+
+
+.image{
+  width: 1px;
+  height: 130px;
+  float: left;
+  margin-left: 200%;
+  border-radius: 20%;  
+  
+  
+}
+.title{
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+.texto1{
+  font-size: 20px;
+}
+
+.texto2{
+  font-size: 14px;
+}
+
+body{margin: 0;}
+header {
+  text-align: center;
+  background-color: #7b331b;
+  padding: 3px;
+}
+
+header h1 {
+  border: none;
+  justify-content: center;
+  margin-left: 3.5%;
+  align-items: center;
+}
+.titulo {
+  float: left;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+                           /*inicio do codigo do elemento buscar*/
+.search__input {
+  font-family: inherit;
+  font-size: 22px;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0;
+  border-radius: 30px;
+  width: 10em;
+  transition: all ease-in-out .5s;
+  margin-right: 1rem;
+  margin-left: 10%;
+}
+
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 10;
+  color: #ccc;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+                      /*butao buscar class button*/
+.button {
+
+padding: 0.7em 1.2em;
+font-size: 10px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-weight: 200;
+color: #000;
+background-color: #fff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+}
+
+.button:hover {
+background-color: #23c483;
+box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+color: #fff;
+transform: translateY(-7px);
+}
+
+.button:active {
+transform: translateY(-1px);
+}
+                      /*fim butao buscar class button*/
+
+.patchon {
+  width: 130px;
+  height: 100px;
+  float: right;
+  margin-right: -850%;
+  border-radius: 50%;
+}
+                      /*inicio do codigo dos butoes cabeçalho*/
+.btn button {
+font-size: 18px;
+color: #e2b3b3;
+font-family: inherit;
+font-weight: 800;
+cursor: pointer;
+position: relative;
+border: none;
+background: none;
+text-transform: uppercase;
+transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+transition-duration: 400ms;
+transition-property: color;
+margin: 30px;
+outline: none;
+
+}
+
+.btn button:focus,
+button:hover {
+color: #fff;
+}
+
+.btn button:focus:after,
+button:hover:after {
+width: 100%;
+left: 0%;
+}
+
+.btn button:after {
+content: "";
+pointer-events: none;
+bottom: -2px;
+left: 50%;
+position: absolute;
+width: 0%;
+height: 2px;
+background-color: #fff;
+transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+transition-duration: 400ms;
+transition-property: width, left;
+}
+
+                      /*fim do codigo dos butoes cabeçalho*/
+.botão {
+  --font-color: #fafafa;
+  --bg-color: #02742e;
+  --main-color: #069406;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.botão:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}
+

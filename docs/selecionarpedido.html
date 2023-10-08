@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>PET FOOD</title>
+    <title>SELECIONAR PEDIDO</title>
     <link rel="stylesheet" href="selecionarpedido.css">
 </head>
 <body>
@@ -26,16 +26,14 @@
 
             <img class="imagemlogo" src="imagem.jpg" alt="">
             </form>
-        </div>       <!--fim do codigo do elemento buscar-->
+        </div>       
         </h1>
-                            <!--inicio do codigo dos butoes cabeçalho-->
+                            
         <h2 class="btn">
             <style>
-               
                a:link,
                 a:visited {
-                  color: #eeeeee; 
-
+                  color: white; 
                 }
               </style>
         <button ><a href="#secao-de-destino">Sobre</a></button>
@@ -43,9 +41,25 @@
         <button ><a href="#secao-de-destino2">Animais congelados</a></button>
         <button ><a href="#secao-de-destino3">Outros alimentos</a></button>
         </h2>
-                                <!--fim do codigo dos butoes cabeçalho-->
-
-                                <!--inicio do card-->
     </header>
+
+  <img class="produto" src="grilo.webp" alt=""> 
+
+  <h1 class="selec-prod">Selecionar Produto</h1>
+  <div class="produtoselecionado">
+  <form action="processar_pedido.php" method="post">
+      <label for="produto">Produto Selecionado:</label>
+      <select id="produto" name="produto">
+          <option value="produto1">Grilo preto pacote com 10uni.</option>
+          <option value="produto2">Grilo preto pacote com 20uni.</option>
+          <option value="produto3">Grilo preto pacote com 30uni.</option>
+      </select>
+      <br>
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+      <br>
+      <input class="btn-carrinho" type="submit" value="Adicionar ao Carrinho">
+  </form>
+</div>
 </body>
 </html>

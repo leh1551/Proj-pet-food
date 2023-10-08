@@ -21,6 +21,10 @@
     height: 150px;
 }
 
+body{
+  background-color: white;
+}
+
 header h1 {
     border: none;
     justify-content: center;
@@ -218,3 +222,16 @@ body{
   border-radius: 3%;
 }
 
+.avaliar-produto{
+  margin-top: 32%;
+  margin-left: 10%;
+}
+.btn-avaliação{
+  color: #000;
+  border-radius: 45px;
+  background-color: blue;
+}
+.avaliar{
+  border: #000 solid;
+  margin-top: 3%;
+}

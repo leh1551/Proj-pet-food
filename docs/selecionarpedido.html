@@ -28,9 +28,11 @@
     </header>
 
     <img class="produto" src="grilo.webp" alt=""> 
-    <div class="conteudo">
-        <h1 class="selec-prod">Selecionar Produto</h1>
+  
         <div class="produtoselecionado">
+            <h1 class="selec-prod">Selecionar Produto</h1>
+            <div class="form">
+                <br>
             <form action="processar_pedido.php" method="post">
                 <label for="produto">Produto Selecionado:</label>
                 <select id="produto" name="produto">
@@ -38,17 +40,27 @@
                     <option value="produto2">Grilo preto pacote com 20uni.</option>
                     <option value="produto3">Grilo preto pacote com 30uni.</option>
                 </select>
+                <br><br>
+            
                 <label for="quantidade">Quantidade:</label>
                 <input type="number" id="quantidade" name="quantidade" min="1" value="1">
+                <br><br>
+                <label for="text">Valor: R$ 25,00</label> <br>
+                <br>
                 <input class="btn-carrinho" type="submit" value="Adicionar ao Carrinho">
             </form>
+            <br>
+        </div>
         </div>
         <div class="avaliar-produto">
             <h2 class="avali-prod">Avaliações de clientes</h2>
+            <br>
             <input class="btn-avaliação" type="submit" value="Avaliar esse produto">
         </div>
-        <div class="avaliar">Avaliações</div>
-    </div>
+
+        
+       
+   
 </body>
 </html>
 

@@ -196,3 +196,44 @@ body {
       margin: 0;
   }
 }
+
+div {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.rating {
+  font-size: 36px;
+  margin: 20px 0;
+  color: #f4c542;
+}
+
+.star {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.star.active {
+  color: #f4c542;
+}
+
+textarea {
+  width: 80%;
+  height: 100px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #f4c542;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#thank-you-message {
+  margin: 20px auto;
+  font-weight: bold;
+}

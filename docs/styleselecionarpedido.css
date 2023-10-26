@@ -74,6 +74,23 @@ body {
   margin-right: 10px;
 }
 /* Barra de navegação */
+
+button#cart-button {
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: -80%;
+  margin-left: 80%;
+  border-radius: 45px;
+
+}
+
+/* Estilo para o ícone de carrinho de compras */
+button#cart-button i {
+  margin-right: 5px;
+}
 .nav {
   text-align: center;
   margin-top: 20px;
@@ -147,16 +164,12 @@ body {
 
 
 }
-.btn-avaliação{
-  background-color: blue;
+#btn-avaliar{
   border-radius: 45px;
-  padding: 10px 10px;
 }
 
-.btn-carrinho{
-  background-color: blue;
+#btn-sacola{
   border-radius: 45px;
-  padding: 10px 10px;
 }
 
 /* Estilos responsivos */

@@ -18,7 +18,7 @@ body {
 
 .petfood {
   font-size: 2rem;
-  margin-top: 2px;
+  margin-top: -5px;
 }
 
 .search {
@@ -156,19 +156,16 @@ button#cart-button {
 .produtoselecionado {
   margin-top: 10px;
   text-align: center;
-  margin: 0 auto;
-  max-width: 40%;
+  width: 50%;
   margin-bottom: 20px;
-  width: 100%;
+  margin-left: 30%;
 }
 
 .avaliar-produto{
  border: solid black;
  margin-top: 60px;
- width: 90%;
+ width: 100%;
  padding: 10px 20px;
- position: absolute;
- left: 50px;
 }
 
 #btn-avaliar{

@@ -1,5 +1,6 @@
 
-/* Estilos gerais */
+/* Cabeçalho */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,14 +8,13 @@ body {
   background-color: #f2f2f2;
 }
 
-/* Cabeçalho */
 .header {
   background-color: #7b331b;
   color: white;
   text-align: left;
   padding: 20px;
-  position: relative;
-  margin: auto;
+  position: 100%;
+  width: 100%;
 }
 
 .petfood {
@@ -27,6 +27,18 @@ body {
   margin-top: 10px;
   max-width: 100%;
 }
+
+/* Adicione estas regras de mídia para ajustar o cabeçalho em telas menores */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .petfood {
+    font-size: 1.5rem;
+  }
+}
+
 
 .search__input {
   font-family: inherit;
@@ -73,15 +85,16 @@ body {
   width: auto;
   max-width: 120px;
   margin-top: -70px;
-  margin-right: 10px;
+  margin-right: 30px;
 }
-/* Barra de navegação */
 
-.btns{
+/* Barra de navegação */
+.btns {
   margin-top: 15px;
   margin-left: 70%;
 }
-.button1{
+
+.button1, .button2 {
   background-color: #ffffff;
   color: #333;
   border: none;
@@ -90,19 +103,24 @@ body {
   border-radius: 45px;
 }
 
-.button2{
-  background-color: #ffffff;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 45px;
+/* Adicione regras de mídia para ajustar a barra de navegação em telas menores */
+@media (max-width: 768px) {
+  .btns {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .button1, .button2 {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 
 /* Estilo para o ícone de carrinho de compras */
 button#cart-button i {
   margin-right: 5px;
 }
+
 .nav {
   text-align: center;
   margin-top: 20px;
@@ -241,8 +259,8 @@ body .carde{
 main div{
   
     margin: auto;
-    width: 600px;
-    height: 200px;
+    width: 80%;
+    height: 100%;
     background-color: #7B331B ;
     color: #fff;
     padding: 20px;

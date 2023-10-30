@@ -30,13 +30,13 @@ body {
   width: auto;
   max-width: 100px;
   margin-top: -85px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 main div{
   margin: auto;
-  width: 600px;
-  height: 250px;
+  width: 80%;
+  height: 100%;
   background-color: #7B331B;
   color: #fff;
   padding: 20px;

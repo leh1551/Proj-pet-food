@@ -18,45 +18,38 @@ stars.forEach(star => {
     });
 });
 
-document.getElementById('submit').addEventListener('click', () => {
+document.getElementById('btn-avaliar').addEventListener('click', () => {
     const comment = commentBox.value;
     commentText.innerText = `Seu comentário:${comment}`;
 });
 
-const cartButton = document.getElementById("cart-count");
-const cartCount = document.getElementById("btn-sacola");
-
+const cartCount = document.getElementById("cart-count");
 let cartItemCount = 0;
 
-// Adicionar um item à sacola
 function addItemToCart() {
-    cartItemCount++;
-    updateCartCount();
+  cartItemCount++;
+  updateCartCount();
 }
 
-// Atualizar a contagem na sacola
 function updateCartCount() {
-    cartCount.textContent = cartItemCount;
+  cartCount.textContent = cartItemCount;
 }
 
-// Evento de clique para adicionar um item
-cartButton.addEventListener("click", () => {
-    addItemToCart();
-});
+function calcularTotal() {
+  const quantidade = parseFloat(document.getElementById("quantidade").value);
+  const precoPorItem = parseFloat(document.getElementById("precoPorItem").value);
+
+  let total = quantidade * precoPorItem;
+
+  if (isNaN(total)) {
+    total = 0;
+  }
+
+  document.getElementById("total").textContent = "Total: R$ " + total.toFixed(2);
+}
 
 // Inicialização da contagem
 updateCartCount();
 
-
-function calcularTotal() {
-    var quantidade = parseFloat(document.getElementById("quantidade").value);
-    var precoPorItem = parseFloat(document.getElementById("precoPorItem").value);
-
-    var total = quantidade * precoPorItem;
-
-    if (!isNaN(total)) {
-        document.getElementById("total").textContent = "Total: R$ " + total.toFixed(2);
-    } else {
-        document.getElementById("total").textContent = "Total: R$ 0.00";
-    }
-}
+// Adicionar um item à sacola quando o botão "btn-sacola" é clicado
+document.getElementById("btn-sacola").addEventListener("click", addItemToCart);

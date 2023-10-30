@@ -18,7 +18,7 @@ body {
 
 .petfood {
   font-size: 2rem;
-  margin-top: 5px;
+  margin-top: 2px;
 }
 
 .search {
@@ -143,6 +143,7 @@ button#cart-button {
   font-size: 1.5rem;
   margin-top: -180px;
   margin-left: 10%;
+  width: 100%;
 
 }
 
@@ -150,37 +151,33 @@ button#cart-button {
   border: solid black;
   margin-left: 10%;
   border-radius: 5px;
-  
-
-
+  text-align: center;
 }
 .produtoselecionado {
   margin-top: 10px;
   text-align: center;
-  border-radius: 5px;
   margin: 0 auto;
-  max-width: 50%;
+  max-width: 40%;
   margin-bottom: 20px;
-  
-  
-
-  
+  width: 100%;
 }
 
 .avaliar-produto{
  border: solid black;
- margin-left: 20px;
- margin-right: 20px;
  margin-top: 60px;
-
-
+ width: 90%;
+ padding: 10px 20px;
+ position: absolute;
+ left: 50px;
 }
+
 #btn-avaliar{
   border-radius: 45px;
 }
 
 #btn-sacola{
   border-radius: 45px;
+  margin-bottom: 5px;
 }
 
 /* Estilos responsivos */

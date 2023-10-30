@@ -1,70 +1,53 @@
-/* style.css */
 
+/* Estilos gerais */
 body {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
 }
 
-header {
-    text-align: center;
-    background-color: #7b331b;
-    padding: 20px 40px;
-    position: relative;
-    margin: auto;
-    height: 125px;
+/* Cabeçalho */
+.header {
+  background-color: #7b331b;
+  color: white;
+  text-align: left;
+  padding: 20px;
+  position: relative;
+  margin: auto;
 }
 
-header h1 {
-    border: none;
-    justify-content: center;
-    margin-left: 3.5%;
-    align-items: center;
-}
-.titulo {
-    float: left;
+.petfood {
+  font-size: 2rem;
+  margin-top: 10px;
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-  }
-                             /*inicio do codigo do elemento buscar*/
-  .search__input {
-    font-family: inherit;
-    font-size: 25px;
-    background-color: #f4f2f2;
-    border: none;
-    color: #646464;
-    padding: 0;
-    border-radius: 30px;
-    width: 28%;
-    transition: all ease-in-out .5s;
-    margin-right: 1rem;
-    margin-left: center;
-  }
-  
-  .search__input:hover, .search__input:focus {
-    box-shadow: 0 0 1em #00000013;
-  }
-  
-  .search__input:focus {
-    outline: none;
-    background-color: #f0eeee;
-  }
-  
-  .search__input::-webkit-input-placeholder {
-    font-weight: 10;
-    color: #ccc;
-  }
-  
-  .search__input:focus + .search__button {
-    background-color: #f0eeee;
-  }
-                        /*butao buscar class button*/
- .button {
-  padding: 0.7em 1.2em;
-  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.search__input {
+  font-family: inherit;
+  font-size: 21px;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 10px;
+  border-radius: 30px;
+  width: 50%;
+  transition: all ease-in-out 0.5s;
+}
+
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+  background-color: #f0eeee;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 200;
@@ -76,74 +59,76 @@ header h1 {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  margin-left: -40%;
-  text-decoration: none;
-
 }
 
- .button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 25px 30px rgba(46, 229, 157, 0.4);
-  color: #000000;
-  transform: translateY(-7px);
-}
-
-.button:active {
-  transform: translateY(-1px);
-}
-                        /*fim butao buscar class button*/
-.button1 {
-
-  padding: 0.7em 1.2em;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  margin-left: 340px;
-  text-decoration: none;
-}
-
-.button2 {
-  padding: 0.7em 1.2em;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  margin-left: 340px;
-  text-decoration: none;
-}
-
- .button1:hover {
+.button:hover {
   background-color: #23c483;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
-  text-decoration: none;
+}
+.imagem-logo{
+  border-radius: 50%;
+  float: right;
+  width: auto;
+  max-width: 120px;
+  margin-top: -70px;
+  margin-right: 10px;
+}
+/* Barra de navegação */
+
+.btns{
+  margin-top: 15px;
+  margin-left: 70%;
+}
+.button1{
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 45px;
 }
 
-.button1:active {
-  transform: translateY(-1px);}
-                            /*fim do codigo do elemento buscar*/
-.patchon {
-    width: 10%;
-    height: 7%;
-    float: right;
-    margin-right: auto;
-    border-radius:50%;
+.button2{
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 45px;
+}
+
+/* Estilo para o ícone de carrinho de compras */
+button#cart-button i {
+  margin-right: 5px;
+}
+.nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Conteúdo principal */
+.conteudo {
+  padding: 1rem;
+  margin: 10px;
+  justify-content: space-between;
+
 }
                         /*inicio do codigo dos butoes cabeçalho*/
 .btn{

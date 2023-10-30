@@ -18,6 +18,7 @@ body {
 
 .petfood {
   font-size: 2rem;
+  margin-top: 5px;
 }
 
 .search {
@@ -73,6 +74,21 @@ body {
   margin-top: -60px;
   margin-right: 10px;
 }
+
+.btns{
+  margin-top: 10px;
+  margin-left: 60%;
+  border-radius: 45px;
+  padding: 10px 20px;
+}
+.button1{
+  background-color: #ffffff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 45px;
+}
 /* Barra de navegação */
 
 button#cart-button {
@@ -81,16 +97,11 @@ button#cart-button {
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  margin-top: -80%;
-  margin-left: 80%;
   border-radius: 45px;
-
 }
 
 /* Estilo para o ícone de carrinho de compras */
-button#cart-button i {
-  margin-right: 5px;
-}
+
 .nav {
   text-align: center;
   margin-top: 20px;

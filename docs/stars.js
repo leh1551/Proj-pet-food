@@ -23,8 +23,8 @@ document.getElementById('submit').addEventListener('click', () => {
     commentText.innerText = `Seu comentário:${comment}`;
 });
 
-const cartButton = document.getElementById("btn-sacola");
-const cartCount = document.getElementById("cart-count");
+const cartButton = document.getElementById("cart-count");
+const cartCount = document.getElementById("btn-sacola");
 
 let cartItemCount = 0;
 

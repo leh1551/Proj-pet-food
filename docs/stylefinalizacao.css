@@ -1,0 +1,135 @@
+/* Estilos para o modo noturno */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: #7b331b;
+  color: white;
+  text-align: left;
+  padding: 30px;
+  position: relative;
+  margin: auto;
+}
+
+.petfood {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: white;
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.imagem-logo{
+  border-radius: 50%;
+  float: right;
+  width: auto;
+  max-width: 100px;
+  margin-top: -85px;
+  margin-right: 10px;
+}
+
+main div{
+  margin: auto;
+  width: 600px;
+  height: 250px;
+  background-color: #7B331B;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.title{
+  align-items: center;
+  text-align: center;
+  color: black;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 50px;
+}
+.texto1{
+  font-size: 20px;
+}
+
+.texto2{
+  font-size: 17px;
+}
+
+.titulo {
+  float: left;
+  margin-top: 20px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+                           /*inicio do codigo do elemento buscar*/
+.search__input {
+  font-family: inherit;
+  font-size: 22px;
+  background-color: #f4f2f2;
+  border: none;
+  color: #646464;
+  padding: 0;
+  border-radius: 30px;
+  width: 10em;
+  transition: all ease-in-out .5s;
+  margin-right: 1rem;
+  margin-left: 10%;
+}
+
+.search__input:hover, .search__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 10;
+  color: #ccc;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.patchon {
+  width: 130px;
+  height: 100px;
+  float: right;
+  margin-left: 900px;
+  border-radius: 50%;
+}
+
+                      /*fim do codigo dos butoes cabeçalho*/
+.botão {
+  --font-color: #fafafa;
+  --bg-color: #02742e;
+  --main-color: #069406;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+.botão:active {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+}

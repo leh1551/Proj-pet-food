@@ -1,7 +1,36 @@
 /* Estilos para o modo noturno */
-body.dark-mode {
-    background-color: #979797;
-    color: #ffffff; 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: #7b331b;
+  color: white;
+  text-align: left;
+  padding: 30px;
+  position: relative;
+  margin: auto;
+}
+
+.petfood {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: white;
+  margin-top: 10px;
+  text-align: left;
+
+}
+
+.imagem-logo{
+  border-radius: 50%;
+  float: right;
+  width: auto;
+  max-width: 120px;
+  margin-top: -80px;
+  margin-right: 10px;
 }
 
 .switch {

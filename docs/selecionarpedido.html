@@ -1,109 +1,106 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SELECIONAR PEDIDO</title>
-    <link rel="stylesheet" href="styleselecionarpedido.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styleselecionarpedido.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
     <header class="header">
-        <button id="cart-button">
-            <i class="fas fa-shopping-cart"></i> Sacola <span id="cart-count">0</span>
-        </button>
+    <div class="btns">
+    <a href="login.html" class="button1" style="color: #000;">Login</a>
+    <button id="cart-button">
+        <i class="fas fa-shopping-cart"></i> Sacola
+        <span id="cart-count">0</span>
+      </button>
+      </div>
 
-        <h1 class="petfood">Pet Food</h1>
-        <img class="imagem-logo" src="imagem.jpg" alt="">
-       
-        <div class="search">
+      <h1 class="petfood">Pet Food</h1>
+      <img class="imagem-logo" src="imagem.jpg" alt="" />
 
-           
-            <form>
-                <input type="text" class="search__input" id="busca" placeholder="Buscar...">
-                <button class="button" type="submit">Buscar</button>
-            
-            </form>
-           
-
-        </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#secao-de-destino">Sobre</a></li>
-                <li><a href="#secao-de-destino1">Animais vivos</a></li>
-                <li><a href="#secao-de-destino2">Animais congelados</a></li>
-                <li><a href="#secao-de-destino3">Outros alimentos</a></li>
-            </ul>
-        </nav>
+      <div class="search">
+        <form>
+          <input
+            type="text"
+            class="search__input"
+            id="busca"
+            placeholder="Buscar..."
+          />
+          <button class="button" type="submit">Buscar</button>
+        </form>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#secao-de-destino">Sobre</a></li>
+          <li><a href="#secao-de-destino1">Animais vivos</a></li>
+          <li><a href="#secao-de-destino2">Animais congelados</a></li>
+          <li><a href="#secao-de-destino3">Outros alimentos</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <img class="produto" src="grilo.webp" alt=""> 
-  
-        <div class="produtoselecionado">
-            <h1 class="selec-prod">Selecionar Produto</h1>
-            <div class="form">
-                <br>
-            <form action="processar_pedido.php" method="post">
-                <label for="produto">Produto Selecionado:</label>
-                <select id="produto" name="produto">
-                    <option value="produto1">Grilo preto pacote com 10uni.</option>
-                    <option value="produto2">Grilo preto pacote com 20uni.</option>
-                    <option value="produto3">Grilo preto pacote com 30uni.</option>
-                </select>
-                <br><br>
-            
-                    <label for="quantidade">Quantidade:</label>
-                    <input type="number" id="quantidade" value="0" oninput="calcularTotal()">
-                    <br><br>
-                    <label for="precoPorItem">Preço por Item (R$):</label>
-                    <input type="number" step="0.01" id="precoPorItem" value="25.00" oninput="calcularTotal()">
-                
-                <p id="total">Total: R$ 0.00</p>
+    <img class="produto" src="grilo.webp" alt="" />
 
-             
-                <br>
-            </form>
-               <button id="btn-sacola"> seleciona produto</button>
-           <br>
-            <br>
+    <div class="produtoselecionado">
+      <h1 class="selec-prod">Selecionar Produto</h1>
+      <div class="form">
+        <br />
+        <form action="processar_pedido.php" method="post">
+          <label for="produto">Produto Selecionado:</label>
+          <select id="produto" name="produto">
+            <option value="produto1">Grilo preto pacote com 10uni.</option>
+          </select>
+          <br /><br />
+          <label for="quantidade">Quantidade:</label>
+          <input
+            type="number"
+            id="quantidade"
+            value="0"
+            oninput="calcularTotal()"
+          />
+          <br /><br />
+          <label for="precoPorItem">Preço por Item(R$):</label>
+          <input
+            type="number"
+            step="0.01"
+            id="precoPorItem"
+            value="25.00"
+            oninput="calcularTotal()"
+          />
+          <p id="total">Total: R$ 0.00</p>
+          <br />
+        </form>
+        <button id="btn-sacola">Seleciona Produto</button>
+        <br />
+        <br />
+      </div>
+    </div>
+    <div class="avaliar-produto">
+      <div>
+        <p>Deixe sua avaliação:</p>
+        <div class="rating" id="rating">
+          <span data-rating="5">☆</span><span data-rating="4">☆</span
+          ><span data-rating="3">☆</span><span data-rating="2">☆</span
+          ><span data-rating="1">☆</span>
         </div>
-        </div>
-        <div class="avaliar-produto">
-            
-           
-            <div>
-                <p>Deixe sua avaliação:</p>
-                <div class="rating" id="rating">
-                    <span data-rating="5">☆</span
-                    ><span data-rating="4">☆</span
-                    ><span data-rating="3">☆</span
-                    ><span data-rating="2">☆</span
-                    ><span data-rating="1">☆</span>
-                </div>
-            </div>
-        
-            <div>
-                <p>Seu comentário:</p>
-                <textarea id="comment" rows="4" cols="50"></textarea>
-            </div>
-        
-            <button id="btn-avaliar">Enviar Avaliação</button>
-        
-            <p id="ratingText"></p>
-            <p id="commentText"></p>
-        
-            <script src="stars.js"> </script>
+      </div>
 
-            
-        
+      <div>
+        <p>Seu comentário:</p>
+        <textarea id="comment" rows="4" cols="50"></textarea>
+      </div>
 
-        </div>
+      <button id="btn-avaliar">Enviar Avaliação</button>
 
-        
+      <p id="ratingText"></p>
+      <p id="commentText"></p>
 
-      
-       
-   
-</body>
+      <script src="stars.js"></script>
+    </div>
+  </body>
 </html>
-

@@ -2,27 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CADASTRO</title>
-    <link rel="stylesheet" href="stylecadastro.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="stylecadastro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
     <header class="header">
         <h1 class="petfood">Pet Food</h1>
-        <img class="imagem-logo" src="imagens/imagem.jpg" alt="" />
+        <img class="imagem-logo" src="imagens/imagem.jpg" alt="">
         <div class="search">
         </div>
     </header>
-        <label class="switch">
-            <input type="checkbox" id="toggle-mode">
-            <span class="slider"></span>
-        </label>
-        <!-- Seu conteúdo HTML aqui -->
+        
         <script src="script.js"></script>
-    </div>
 
     <h1>Cadastro de Usuário</h1>
     <form action="https://webhook.site/b5de5359-7539-440d-875e-2c4d2086a259" method="post"
@@ -31,51 +26,51 @@
             <div class="subtitle">Vamos fazer seu cadastro</div>
             <div class="input-container ic1">
                 <label for="nome" class="placeholder"></label>
-                <!--  <div class="cut"></div>-->
+                
                 <input type="text" id="nome" class="input" placeholder="Nome:" name="nome" required>
             </div>
 
             <div class="input-container ic2">
                 <label for="email" class="placeholder"></label>
-                <!-- <div class="cut"></div>-->
+                
                 <input type="email" id="email" class="input" placeholder="Email:" name="email" required>
             </div>
 
             <div class="input-container ic2">
                 <label for="cpf" class="placeholder"></label>
-                <!--<div class="cut"></div>-->
+                
                 <input type="text" id="cpf" class="input" placeholder="CPF:" name="cpf" required>
 
             </div>
 
             <div class="input-container ic2">
                 <label for="rg" class="placeholder"></label>
-                <!-- <div class="cut"></div>-->
+                
                 <input type="text" id="rg" class="input" placeholder="Rg:" name="rg" required>
             </div>
 
             <div class="input-container ic2">
                 <label for="data_nascimento"></label>
-                <!--  <div class="cut"></div>-->
+                
                 <input type="date" id="data_nascimento" class="input" required>
             </div>
 
 
             <div class="input-container ic2">
                 <label for="celular" class="placeholder"></label>
-                <!--<div class="cut"></div>-->
+                
                 <input type="tel" id="celular" class="input" placeholder="Celular:" name="celular" required>
             </div>
 
             <div class="input-container ic2">
                 <label for="senha" class="placeholder"></label>
-                <!-- <div class="cut cut-short"></div>-->
+               
                 <input type="password" id="senha" class="input" placeholder="Senha:" name="senha" required>
             </div>
 
             <div class="input-container ic2">
                 <label for="confirm_senha" class="placeholder"></label>
-                <!-- <div class="cut cut-short"></div>-->
+                
                 <input type="password" id="confirm_senha" class="input" placeholder="Confirme a senha:"
                     name="confirm_senha" required>
             </div>
@@ -89,7 +84,7 @@
 
     <script>
         function validarForm() {
-            // Obtém os valores dos campos
+
             var nome = document.getElementById("nome").value;
             var email = document.getElementById("email").value;
             var cpf = document.getElementById("cpf").value;
@@ -99,21 +94,16 @@
             var senha = document.getElementById("senha").value;
             var confirm_senha = document.getElementById("confirm_senha").value;
 
-            // Verifica se as senhas coincidem
             if (senha !== confirm_senha) {
                 alert("As senhas não coincidem.");
                 return false; // Impede o envio do formulário
             }
 
-            // Verifica se todos os campos estão preenchidos
             if (nome === "" || email === "" || cpf === "" || celular === "" || senha === "" || confirm_senha === "") {
                 alert("Todos os campos devem ser preenchidos.");
                 return false; // Impede o envio do formulário
             }
 
-            // Adicione outras validações conforme necessário
-
-            // Se todas as validações passarem, o formulário será enviado
             return true;
         }
     </script>

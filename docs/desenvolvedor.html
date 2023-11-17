@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desenvolvedor.css">
+    <title>Seu E-commerce</title>
+</head>
+<body>
+    <header>
+        <h1>Pet-Food</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Admin Protutos</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home"><br>
+        <h2>Bem-vindo de volta ao nosso E-commerce desenvolvedor!</h2>
+        <p>Adicione seu novo produto aqui!.</p>
+    </section>
+    <body>
+
+        <div class="container">
+            <h2>Adicionar Produto</h2>
+            <form id="productForm">
+                <label for="productImage">Imagem URL:</label>
+                <input type="text" id="productImage" name="productImage" required>
+        
+                <label for="productName">Nome do Produto:</label>
+                <input type="text" id="productName" name="productName" required>
+        
+                <label for="productPrice">Preço:</label>
+                <input type="number" id="productPrice" name="productPrice" min="0" step="0.01" required>
+        
+                <label for="productQuantity">Quantidade:</label>
+                <input type="number" id="productQuantity" name="productQuantity" min="1" required>
+        
+                <button type="button" onclick="addProduct()">Adicionar Produto</button>
+            </form>
+            <div id="productList"></div>
+        </div>
+        
+        <script src="admin.js"></script>
+        </body>
+
+
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 10px; /* Ajuste o valor conforme necessário */
+        }
+        th, td {
+            padding: 10px; /* Adiciona algum preenchimento para melhorar a aparência */
+            border: 1px solid black; /* Adiciona bordas para melhor visualização */
+        }
+    </style>
+
+
+    <section id="products">
+        <h2>Produtos ja publicados.</h2>
+        <!-- Aqui você pode exibir a lista de produtos dinamicamente -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nome do produto</th><br>
+                    <th>Quantidade</th>
+                    <th>Preço em Reais</th>
+                    <th>Produto ativo no site </th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Grilo preto</td>
+                    <td>Pacote com 10uni</td>
+                    <td>R$ 25.00</td>
+                    <th>Ativo</th>
+                </tr>
+                
+                <tr>
+                    <td>Bicho da Seda</td>
+                    <td>Pacote  com 40uni</td>
+                    <td>R$ 40.00</td>
+                    <th>Ativo</th>
+                </tr>
+                <tr>
+                    <td>Gafanhoto Verde </td>
+                    <td>Pacote com 10un</td>
+                    <td>R$ 30.00</td>
+                    <th>Ativo</th>
+            </tbody>
+        </table><br><br>
+        
+        <ul id="product-list"></ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Seu E-commerce. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

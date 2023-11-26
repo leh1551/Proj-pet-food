@@ -16,6 +16,86 @@
                
             </ul>
         </nav>
+
+        <style>
+            /* Estilo para a lista de produtos */
+            #lista-produtos {
+              list-style-type: none;
+              padding: 0;
+            }
+        
+            /* Estilo para cada item da lista de produtos */
+            #lista-produtos li {
+              margin-bottom: 10px;
+              padding: 10px;
+              border: 1px solid #ddd;
+            }
+        
+            /* Estilo para os botões de edição e exclusão */
+            #lista-produtos button {
+              margin-right: 5px;
+              cursor: pointer;
+            }
+          </style>
+        </head>
+        <body>
+        
+        <ul id="lista-produtos"></ul>
+
+<script>
+    
+  // Função para adicionar um produto à lista
+  function adicionarProdutoAoDOM(produto) {
+    const listaProdutos = document.getElementById('lista-produtos');
+
+    const novoElemento = document.createElement('li');
+    novoElemento.textContent = `${produto.nome} - R$${produto.preco}`;
+
+    // Botão de edição
+    const botaoEdicao = document.createElement('button');
+    botaoEdicao.textContent = 'Editar';
+    botaoEdicao.addEventListener('click', () => editarProduto(produto.id));
+
+    // Botão de exclusão
+    const botaoExclusao = document.createElement('button');
+    botaoExclusao.textContent = 'Excluir';
+    botaoExclusao.addEventListener('click', () => excluirProduto(produto.id));
+
+    novoElemento.appendChild(botaoEdicao);
+    novoElemento.appendChild(botaoExclusao);
+
+    listaProdutos.appendChild(novoElemento);
+  }
+
+  // Função para editar um produto
+  function editarProduto(id) {
+    // Implementar a lógica de edição aqui
+    console.log(`Editar o produto com o ID ${id}`);
+  }
+
+  // Função para excluir um produto
+  function excluirProduto(id) {
+    // Implementar a lógica de exclusão aqui
+    console.log(`Excluir o produto com o ID ${id}`);
+  }
+
+  
+        
+            async function fetchData() {
+              try {
+                const response = await fetch('http://localhost:3003/api/produtos');
+                if (!response.ok) {
+                  throw new Error(`Erro na solicitação: ${response.statusText}`);
+                }
+        
+                const data = await response.json();
+                console.log('Dados recebidos do backend:', data);
+              } catch (error) {
+                console.error('Erro:', error);
+              }
+            }
+        
+</script>
     </header>
 
     <section id="home"><br>
@@ -23,6 +103,8 @@
         <p>Adicione seu novo produto aqui!.</p>
     </section>
     <body>
+
+    
 
         <div class="container">
             <h2>Adicionar Produto</h2>
@@ -69,41 +151,61 @@
                     <th>Nome do produto</th><br>
                     <th>Quantidade</th>
                     <th>Preço em Reais</th>
-                    <th>Produto ativo no site </th>
+                  
                 </tr>
                 
             </thead>
             <tbody>
                 <tr>
                     <td>Grilo preto</td>
-                    <td>Pacote com 10uni</td>
                     <td>R$ 25.00</td>
-                    <th>Ativo</th>
+                    <td>Pacote com 10uni</td>
+                  
+                
                 </tr>
                 
                 <tr>
                     <td>Bicho da Seda</td>
-                    <td>Pacote  com 40uni</td>
                     <td>R$ 40.00</td>
-                    <th>Ativo</th>
+                    <td>Pacote  com 40uni</td>
+                 
+                    
                 </tr>
                 <tr>
                     <td>Gafanhoto Verde </td>
-                    <td>Pacote com 10un</td>
                     <td>R$ 30.00</td>
-                    <th>Ativo</th>
+                    <td>Pacote com 10un</td>
+                  
+                    
             </tbody>
         </table><br><br>
-        
-        <ul id="product-list"></ul>
-    </section>
 
-    <footer>
-        <p>&copy; 2023 Seu E-commerce. Todos os direitos reservados.</p>
-    </footer>
+        <section>
+          <button type="button" id="getProductButton">Obter dados</button>
+          <button type="button" id="deleteProductButton">Deletar Produto</button>
+          <button type="button" id="patchProductButton">Editar Produto</button>
+          <br>
+          <script src="admin.js"></script>
+          <br>
+          <br>
+          <ul id="product-list"></ul>
+      </section>
+  
+      <footer>
+          <p>&copy; 2023 Seu E-commerce. Todos os direitos reservados.</p>
+      </footer>
+  
+      <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
+      <script src="app.js"></script>
+  
+      <!-- Certifique-se de que as funções estejam definidas no momento em que esses scripts são carregados -->
+      <script src="admin.js"></script>
+</body>
+</html>
 
-    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
-    <script src="app.js"></script>
+
+<script src="desenvolvedorDOC.js"></script>
+    
 </body>
 </html>

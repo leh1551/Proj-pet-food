@@ -81,7 +81,7 @@ async function deleteProductButton(event) {
 
     // Obter o valor do campo de ID do produto
     const id = document.getElementById('productID').value;
-    console.log('Veja:', typeof(id));
+    console.log('ID Enviado:', id);
     try {
         const response = await fetch(`http://localhost:3003/api/produtos/${id}`, {
             method: 'DELETE',

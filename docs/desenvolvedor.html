@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="desenvolvedor.css">
-    <title>Seu E-commerce</title>
+    <title>Administrador</title>
 </head>
 <body>
     <header>
@@ -125,6 +125,38 @@
             </form>
             <div id="productList"></div>
         </div>
+
+        <div class="container">
+          <h2>Deletar Produto</h2>
+            <form id="productForm" onsubmit="deleteProductButton(event)">
+                <label >ID do Produto:</label>
+                <input type="text" id="productID" name="productID" required>
+        
+                <button type="submit" >Deletar Produto</button>
+            </form>
+            <div id="productDelete"></div>
+        </div>
+        <div class="container">
+
+          <h2>Editar Produto</h2>
+          <form id="editProductForm" onsubmit="putProductButton(event)">
+            <label for="productID">ID do Produto:</label>
+            <input type="text" id="productID" name="productID" >
+          
+            <label for="productName">Nome do Produto:</label>
+            <input type="text" id="productName" name="productName" >
+          
+            <label for="productPrice">Preço:</label>
+            <input type="number" id="productPrice" name="productPrice" min="0" step="0.01" >
+          
+            <label for="productQuantity">Quantidade:</label>
+            <input type="number" id="productQuantity" name="productQuantity" min="1" >
+          
+            <button type="submit">Editar Produto</button>
+          </form>
+          
+          <div id="productList"></div>
+      </div>
         
         <script src="admin.js"></script>
         </body>
@@ -141,71 +173,42 @@
         }
     </style>
 
-
-    <section id="products">
+    <div class="container"
+    <div id="products">
         <h2>Produtos ja publicados.</h2>
         <!-- Aqui você pode exibir a lista de produtos dinamicamente -->
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Nome do produto</th><br>
-                    <th>Quantidade</th>
-                    <th>Preço em Reais</th>
-                  
-                </tr>
-                
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Grilo preto</td>
-                    <td>R$ 25.00</td>
-                    <td>Pacote com 10uni</td>
-                  
-                
-                </tr>
-                
-                <tr>
-                    <td>Bicho da Seda</td>
-                    <td>R$ 40.00</td>
-                    <td>Pacote  com 40uni</td>
-                 
-                    
-                </tr>
-                <tr>
-                    <td>Gafanhoto Verde </td>
-                    <td>R$ 30.00</td>
-                    <td>Pacote com 10un</td>
-                  
-                    
-            </tbody>
-        </table><br><br>
-
         <section>
-          <button type="button" id="getProductButton">Obter dados</button>
-          <button type="button" id="deleteProductButton">Deletar Produto</button>
-          <button type="button" id="patchProductButton">Editar Produto</button>
+          <button type="button" onclick="getProductButton()" id="getProductButton">Obter dados</button>
+          <!-- <button type="button" onclick="deleteProductButton()" id="deleteProductButton">Deletar Produto</button> -->
+          <!-- <button type="button" onclick="patchProductButton()" id="patchProductButton">Editar Produto</button> -->
           <br>
           <script src="admin.js"></script>
           <br>
           <br>
           <ul id="product-list"></ul>
       </section>
+        <table border="1">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+              </tr> 
+            </thead>
+            <tbody id="corpoTabela">
+              <!-- Linhas da tabela serão adicionadas aqui -->
+            </tbody>
+        </table><br><br>
+      </div>
+
   
       <footer>
           <p>&copy; 2023 Seu E-commerce. Todos os direitos reservados.</p>
       </footer>
   
-      <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
-      <script src="app.js"></script>
-  
+
       <!-- Certifique-se de que as funções estejam definidas no momento em que esses scripts são carregados -->
       <script src="admin.js"></script>
-</body>
-</html>
-
-
-<script src="desenvolvedorDOC.js"></script>
-    
 </body>
 </html>

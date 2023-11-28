@@ -34,7 +34,6 @@ section {
 footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 1em;
     position: fixed;
     bottom: 0;
@@ -108,4 +107,8 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#home {
+    text-align: center;
 }

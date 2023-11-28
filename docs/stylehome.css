@@ -1,280 +1,88 @@
-
-/* Cabeçalho */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-}
-
-.header {
+/* Estilos personalizados */
+header {
   background-color: #7b331b;
-  color: white;
-  text-align: left;
-  padding: 20px;
-  position: 100%;
-  width: 100%;
-}
-
-.petfood {
-  font-size: 2rem;
-  margin-top: 10px;
-}
-
-.search {
-  text-align: center;
-  margin-top: 10px;
-  max-width: 100%;
-}
-
-/* Adicione estas regras de mídia para ajustar o cabeçalho em telas menores */
-@media (max-width: 768px) {
-  .header {
-    padding: 10px;
-  }
-
-  .petfood {
-    font-size: 1.5rem;
-  }
-}
-
-
-.search__input {
-  font-family: inherit;
-  font-size: 21px;
-  background-color: #f4f2f2;
-  border: none;
-  color: #646464;
-  padding: 10px;
-  border-radius: 30px;
-  width: 50%;
-  transition: all ease-in-out 0.5s;
-}
-
-.search__input:hover, .search__input:focus {
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
-  background-color: #f0eeee;
-}
-
-.button {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 200;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-}
-
-.button:hover {
-  background-color: #23c483;
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-  color: #fff;
-  transform: translateY(-7px);
-}
-.imagem-logo{
-  border-radius: 50%;
-  float: right;
-  width: auto;
-  max-width: 120px;
-  margin-top: -70px;
-  margin-right: 30px;
-}
-
-/* Barra de navegação */
-.btns {
-  margin-top: 15px;
-  margin-left: 70%;
-}
-
-.button1, .button2 {
-  background-color: #ffffff;
-  color: #333;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 45px;
-}
-
-/* Adicione regras de mídia para ajustar a barra de navegação em telas menores */
-@media (max-width: 768px) {
-  .btns {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  .button1, .button2 {
-    display: block;
-    margin-bottom: 10px;
-  }
-}
-
-/* Estilo para o ícone de carrinho de compras */
-button#cart-button i {
-  margin-right: 5px;
-}
-
-.nav {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.nav li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.nav a {
-  text-decoration: none;
-  color: white;
-}
-
-/* Conteúdo principal */
-.conteudo {
-  padding: 1rem;
-  margin: 10px;
-  justify-content: space-between;
-
-}
-                        /*inicio do codigo dos butoes cabeçalho*/
-.btn{
-  font-size: 18px;
-  color: black;
-  font-family: inherit;
-  font-weight: 800;
-  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
   position: relative;
-  border: none;
-  background: none;
-  text-transform: uppercase;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: color;
-  margin: 30px;
-  outline: none;
-  text-align: center;
-  text-decoration: none;
-  margin-top: auto;
 }
 
-.btn button:focus,
-button:hover {
-  color: #fff;
-  text-decoration: none;
+.spacer {
+  height: 50px;
 }
 
-.btn button:focus:after,
-button:hover:after {
-  width: 100%;
-  left: 0%;
-}
-
-.btn button:after {
-  content: "";
-  pointer-events: none;
-  bottom: -2px;
-  left: 50%;
+.scroll-btns {
   position: absolute;
-  width: 0%;
-  height: 2px;
-  background-color: #fff;
-  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-  transition-duration: 400ms;
-  transition-property: width, left;
-  text-decoration: none;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-                        /*fim do codigo dos butoes cabeçalho*/
-
-.corpo-texto {
-    background-color: gray;
+.scroll-btns button {
+  margin: 5px;
 }
 
-                    /*card de compra*/
-body .carde{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    gap: 16px;
-    background-image: url(fundo.png);
-}                   
- .card{
-    background-color: rgb(196, 216, 216);
-    width: 188px;
-    height: 300px;
-    border-radius: 30px;
-    box-shadow: 4px 4px 12px #aaaa;
-    display: inline-block;
-    margin: 102px;
-    
-}
-.card img{
-   width: 100%;
-   height: 130px;
-   border-bottom-left-radius: 12px;
-   border-top-right-radius: 12px; 
-}
-.card div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    height: 58%;
-}
-.card h1{
-    font-size: 1.2rem;
-}
-.card h2{
-    font-size: .9rem;
-    color: #aaaa;
-}
-.card button{
-    background-color: blue;
-    height: 30px;
-    border: none;
-    padding:4px ;
-    width: 80%;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 20px;}
-                    /*fim do card de compra*/
+.btn-outline-primary {
+      color: black;
+      background-color: white;
+      border-color: transparent;
+  }
 
+.btn-outline-primary:hover {
+      color: white;
+      background-color: black;
+      border-color: transparent;
+  }
 
-main div{
+.card-img-custom {
+  width: 100%; 
+  height: 300px; 
+  object-fit: cover; /* Ajuste para cobrir o espaço do container mantendo a proporção */
+}    
+
+@media (max-width: 768px) {
+  .text-right {
+      text-align: center !important;
+  }
+
+  .spacer {
+      display: none;
+  }
+
+  .scroll-btns {
+      position: static;
+      transform: none;
+      margin-top: 20px;
+  }
+
+  .section-title {
+      text-align: center;
+  }
+
+  .form-inline {
+      display: block;
+      text-align: center;
+  }
+
+  .form-inline input {
+      margin-bottom: 10px;
+  }
+
+  .btn-outline-primary {
+      color: black;
+      background-color: white;
+      border-color: transparent;
+  }
+
+  .btn-outline-primary:hover {
+      color: white;
+      background-color: black;
+      border-color: transparent;
+  }
   
-    margin: auto;
-    width: 80%;
-    height: 100%;
-    background-color: #7B331B ;
-    color: #fff;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
+  .card-img-custom {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; /* Ajuste para cobrir o espaço do container mantendo a proporção */
 }
-.texto{
-    font-family: sans-serif;
-    padding: auto;
-    font-size: 19px;
-}
-.temas{
-    margin-left: 3%;
-    box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.4);
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }

@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.card {
+    background-color: #7b331b;
+    border: none;
+}
+
+.logo {
+    width: 150px; /* Largura do logo */
+    height: auto; /* Altura ajustável mantendo proporção */
+    display: block; /* Para centralizar o logo */
+    margin: 0 auto; /* Para centralizar o logo */
+}
+
+.success-text {
+    color: black;
+}

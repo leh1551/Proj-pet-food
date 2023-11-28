@@ -1,155 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo a Pet Food!</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="stylehome.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="btns">
-            <a href="login.html" class="button1" style="color: #000;">Login</a>
-            <a href="integrantes-projeto/integrantes.html" class="button2" style="color: #000;">integrantes</a>
+
+    <header class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Pet food</h1>
+                </div>
+                <div class="col-md-4">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="col-md-4 text-right">
+                    <a href="login.html" class="btn btn-primary">Login</a>                   
+                    <img src="imagens/imagem.jpg" alt="Logo do Site" style="max-width: 100px; margin-left: 10px;">
+                </div>
+            </div>
         </div>
-        <h1 class="petfood">Pet Food</h1>
-        <img class="imagem-logo" src="imagens/imagem.jpg" alt="">
-        <div class="search">
-            <form>
-                <input type="text" class="search__input" id="busca" placeholder="Buscar...">
-                <button class="button" type="submit">Buscar</button>
-            </form>
+
+        <div class="spacer"></div>
+
+        <div class="scroll-btns">
+            <button class="btn btn-secondary" onclick="scrollToSection('comidas-vivas')">Comidas Vivas</button>
+            <button class="btn btn-secondary" onclick="scrollToSection('comidas-congeladas')">Comidas Congeladas</button>
+            <button class="btn btn-secondary" onclick="scrollToSection('comidas-especiais')">Comidas Especiais</button>
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#secao-de-destino">Sobre</a></li>
-                <li><a href="#secao-de-destino1">Animais vivos</a></li>
-                <li><a href="#secao-de-destino2">Animais congelados</a></li>
-                <li><a href="#secao-de-destino3">Outros alimentos</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <!--texto sobre nos-->
-    <div id="secao-de-destino" class="temas">
-        <p><strong>Sobre</strong></p>
-    </div>
-    <main>
-        <div class="texto"> Bem-vindo à Pet Food, onde atendemos às necessidades alimentares de animais exóticos com
-            paixão. Reconhecemos a importância de cuidados especiais e dietas específicas para essas criaturas
-            únicas. Nossa seleção abrange uma variedade de espécies exóticas, de répteis a mamíferos, promovendo
-            saúde e bem-estar. Além de produtos de alta qualidade.
-            Junte-se a nós nessa jornada de cuidado, descoberta e conexão com o reino animal extraordinário. Venha
-            para a Pet Food, unindo paixão e bem-estar animal!
-        </div>
-    </main>
-    <!--texto sobre nos-->
-
-
-    <div id="secao-de-destino1" class="temas">
-        <p><strong>Animais vivos</strong></p>
-    </div>
-    <p class="corpo-texto">
-    <div class="card">
-        <img src="imagens/grilo.webp" alt="#">
-        <div>
-            <h1>Grilo Preto</h1>
-            <h2>Pacote com 10uni</h2>
-            <span>R$ 25.00</span>
-            <button>Comprar</button>
-        </div>
-    </div>
-    <div class="card">
-        <img src="imagens/bicho-da-seda-portal-agropecuario.jpg" alt="#">
-
-        <div>
-            <h1>Bicho da Seda</h1>
-            <h2>Pacote com 40uni</h2>
-            <span>R$ 40.00</span>
-            <button>Comprar</button>
-        </div>
-    </div>
-    <div class="card">
-        <img src="imagens/gafanhoto.jpg" alt="#">
-
-        <div>
-            <h1>Gafanhoto Verde</h1>
-            <h2>Pacote com 10uni</h2>
-            <span>R$ 30.00</span>
-            <button>Comprar</button>
+    <!-- Conteúdo das seções -->
+    <div id="comidas-vivas" class="container">
+        <h2 class="section-title">Comidas vivas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/gafanhoto.jpg" class="card-img-top card-img-custom" alt="Imagem Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Gafanhoto</h5>
+                        <p class="card-text">Pacote com 10un.</p>
+                        <p class="card-text">R$ 25,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/bicho-da-seda-portal-agropecuario.jpg" class="card-img-top card-img-custom" alt="Imagem Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bicho da seda</h5>
+                        <p class="card-text">Pacote com 10un.</p>
+                        <p class="card-text">R$ 25,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/grilo.webp" class="card-img-top card-img-custom" alt="Imagem Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilo</h5>
+                        <p class="card-text">Pacote com 10un.</p>
+                        <p class="card-text">R$ 25,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div id="secao-de-destino2" class="temas">
-        <p><strong>Animais congelados</strong></p>
-    </div>
-    <p class="corpo-texto">
-    <div class="card">
-        <img src="imagens/camundongo.jpg" alt="#">
-
-        <div>
-            <h1>Camundongo Pequeno</h1>
-            <h2>Pacote com 15uni</h2>
-            <span>R$ 105.00</span>
-            <button>Comprar</button>
+    
+    <div id="comidas-congeladas" class="container">
+        <h2 class="section-title">Comidas congeladas</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/rato.jpg" class="card-img-top card-img-custom" alt="Imagem Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Rato cinza</h5>
+                        <p class="card-text">Pacote com 10un.</p>
+                        <p class="card-text">R$ 25,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/camundongo.jpg" class="card-img-top card-img-custom" alt="Imagem Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Camundongo</h5>
+                        <p class="card-text">Pacote com 10un.</p>
+                        <p class="card-text">R$ 25,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/sapo.webp" class="card-img-top card-img-custom" alt="Imagem Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Sapo</h5>
+                        <p class="card-text">Pacote com 10un.</p>
+                        <p class="card-text">R$ 25,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <div id="comidas-especiais" class="container">
+        <h2 class="section-title">Comidas especiais</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/monkey_cookies.webp" class="card-img-top card-img-custom" alt="Imagem Produto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Ração para macacos</h5>
+                        <p class="card-text">Unidade simples</p>
+                        <p class="card-text">R$ 50,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/capim.jpeg" class="card-img-top card-img-custom" alt="Imagem Produto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Capim</h5>
+                        <p class="card-text">Unidade simples</p>
+                        <p class="card-text">R$ 50,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center mx-auto">
+                    <img src="imagens/feno.jpg" class="card-img-top card-img-custom" alt="Imagem Produto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Feno seco</h5>
+                        <p class="card-text">Unidade simples</p>
+                        <p class="card-text">R$ 50,00</p>
+                        <a href="selecionarpedido.html" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="card">
-        <img src="imagens/rato.jpg" alt="#">
-
-        <div>
-            <h1>Rato Cinza</h1>
-            <h2>Pacote com 10uni</h2>
-            <span>R$ 50.00</span>
-            <button>Comprar</button>
-        </div>
-    </div>
-    <div class="card">
-        <img src="imagens/sapo.webp" alt="#">
-
-        <div>
-            <h1>Sapo</h1>
-            <h2>Pacote com 5uni</h2>
-            <span>R$ 25.00</span>
-            <button>Comprar</button>
-        </div>
-    </div>
-
-    <div id="secao-de-destino3" class="temas">
-        <p><strong>Outros alimentos</strong></p>
-    </div>
-
-    <p class="corpo-texto">
-    <div class="card">
-        <img src="imagens/monkey_cookies.webp" alt="#">
-
-        <div>
-            <h1>Ração para Macacos</h1>
-            <h2>Pacote 3kg</h2>
-            <span>R$ 51.00</span>
-            <button>Comprar</button>
-        </div>
-    </div>
-    <div class="card">
-        <img src="imagens/feno.jpg" alt="#">
-        <div>
-            <h1>Feno</h1>
-            <h2>Quantidade de 7kg</h2>
-            <span>R$ 35.00</span>
-            <button>Comprar</button>
-        </div>
-    </div>
-    <div class="card">
-        <img src="imagens/capim.jpeg" alt="#">
-        <div>
-            <h1>Capim</h1>
-            <h2>Quantidade de 10kg</h2>
-            <span>R$ 15.00</span>
-            <button>Comprar</button>
-        </div>
-    </div>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+    <footer class="bg-dark text-light text-center py-3">
+        <p>Pet Food &copy; 2023. Todos os direitos reservados.</p>
+        <a href="teste.html" class="btn btn-primary">Desenvolverdores</a>
+        <a href="teste.html" class="btn btn-primary">Tela para administrador</a>
+    </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

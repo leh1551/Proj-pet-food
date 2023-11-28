@@ -106,11 +106,11 @@ async function deleteProductButton(event) {
   async function putProductButton(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
   
-    const id = document.getElementById('productID').value;
-    const productName = document.getElementById('productName').value;
-    const productPrice = document.getElementById('productPrice').value;
-    const productQuantity = document.getElementById('productQuantity').value;
-    console.log('uai' , id,productName,productPrice,productQuantity);
+    const id = document.getElementById('editProductID').value;
+    const productName = document.getElementById('editProductName').value;
+    const productPrice = document.getElementById('editProductPrice').value;
+    const productQuantity = document.getElementById('editProductQuantity').value;
+    console.log('informações enviadas:' , id,productName,productPrice,productQuantity);
     // Verifique se os campos obrigatórios estão preenchidos
     if (!id || !productName || !productPrice || !productQuantity) {
       console.error('Todos os campos devem ser preenchidos.', id, productName, productPrice,productQuantity);
@@ -144,3 +144,5 @@ async function deleteProductButton(event) {
       console.error('Erro:', error);
     }
   }
+
+  

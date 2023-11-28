@@ -13,88 +13,13 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#products">Admin Protutos</a></li>
-               
             </ul>
         </nav>
-
-        <style>
-            /* Estilo para a lista de produtos */
-            #lista-produtos {
-              list-style-type: none;
-              padding: 0;
-            }
-        
-            /* Estilo para cada item da lista de produtos */
-            #lista-produtos li {
-              margin-bottom: 10px;
-              padding: 10px;
-              border: 1px solid #ddd;
-            }
-        
-            /* Estilo para os botões de edição e exclusão */
-            #lista-produtos button {
-              margin-right: 5px;
-              cursor: pointer;
-            }
-          </style>
         </head>
         <body>
         
         <ul id="lista-produtos"></ul>
         <script src="admin.js"></script>
-<script>
-    
-  // Função para adicionar um produto à lista
-  function adicionarProdutoAoDOM(produto) {
-    const listaProdutos = document.getElementById('lista-produtos');
-
-    const novoElemento = document.createElement('li');
-    novoElemento.textContent = `${produto.nome} - R$${produto.preco}`;
-
-    // Botão de edição
-    const botaoEdicao = document.createElement('button');
-    botaoEdicao.textContent = 'Editar';
-    botaoEdicao.addEventListener('click', () => editarProduto(produto.id));
-
-    // Botão de exclusão
-    const botaoExclusao = document.createElement('button');
-    botaoExclusao.textContent = 'Excluir';
-    botaoExclusao.addEventListener('click', () => excluirProduto(produto.id));
-
-    novoElemento.appendChild(botaoEdicao);
-    novoElemento.appendChild(botaoExclusao);
-
-    listaProdutos.appendChild(novoElemento);
-  }
-
-  // Função para editar um produto
-  function editarProduto(id) {
-    // Implementar a lógica de edição aqui
-    console.log(`Editar o produto com o ID ${id}`);
-  }
-
-  // Função para excluir um produto
-  function excluirProduto(id) {
-    // Implementar a lógica de exclusão aqui
-    console.log(`Excluir o produto com o ID ${id}`);
-  }
-  
-        
-  async function fetchData() {
-    try {
-      const response = await fetch('http://localhost:3003/api/produtos');
-      if (!response.ok) {
-        throw new Error(`Erro na solicitação: ${response.statusText}`);
-      }
-
-      const data = await response.json();
-      console.log('Dados recebidos do backend:', data);
-    } catch (error) {
-      console.error('Erro:', error);
-    }
-  }
-        
-</script>
     </header>
 
     <section id="home"><br>
@@ -102,8 +27,6 @@
         <p>Adicione seu novo produto aqui!.</p>
     </section>
     <body>
-
-    
 
         <div class="container" id="adicionarProduto">
             <h2>Adicionar Produto</h2>
@@ -127,8 +50,6 @@
         
         <div class="container" id="minhaDiv">
           
-
-
           <h2>Editar Produto</h2>
           <form id="editProductForm" onsubmit="putProductButton(event)">
             <label for="productID">ID do Produto:</label>
@@ -160,18 +81,6 @@
       </div>
         </body>
 
-
-    <style>
-        table {
-            border-collapse: separate;
-            border-spacing: 10px; /* Ajuste o valor conforme necessário */
-        }
-        th, td {
-            padding: 10px; /* Adiciona algum preenchimento para melhorar a aparência */
-            border: 1px solid black; /* Adiciona bordas para melhor visualização */
-        }
-    </style>
-
     <div class="container"
     <div id="products">
         <h2>Produtos ja publicados.</h2>
@@ -181,7 +90,6 @@
           <!-- <button type="button" onclick="deleteProductButton()" id="deleteProductButton">Deletar Produto</button> -->
           <!-- <button type="button" onclick="patchProductButton()" id="patchProductButton">Editar Produto</button> -->
           <br>
-          <script src="admin.js"></script>
           <br>
           <br>
           <ul id="product-list"></ul>
@@ -201,13 +109,9 @@
         </table><br><br>
       </div>
 
-  
       <footer>
           <p>&copy; 2023 Seu E-commerce. Todos os direitos reservados.</p>
       </footer>
-  
 
-      <!-- Certifique-se de que as funções estejam definidas no momento em que esses scripts são carregados -->
-      <script src="admin.js"></script>
 </body>
 </html>

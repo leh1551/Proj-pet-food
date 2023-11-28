@@ -112,3 +112,31 @@ button {
 #home {
     text-align: center;
 }
+
+/* Estilo para a lista de produtos */
+#lista-produtos {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para cada item da lista de produtos */
+#lista-produtos li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para os botões de edição e exclusão */
+#lista-produtos button {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px; /* Ajuste o valor conforme necessário */
+}
+th, td {
+    padding: 10px; /* Adiciona algum preenchimento para melhorar a aparência */
+    border: 1px solid black; /* Adiciona bordas para melhor visualização */
+}

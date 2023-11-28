@@ -145,4 +145,42 @@ async function deleteProductButton(event) {
     }
   }
 
+  // Função para adicionar um produto à lista
+  function adicionarProdutoAoDOM(produto) {
+    const listaProdutos = document.getElementById('lista-produtos');
+
+    const novoElemento = document.createElement('li');
+    novoElemento.textContent = `${produto.nome} - R$${produto.preco}`;
+
+    // Botão de edição
+    const botaoEdicao = document.createElement('button');
+    botaoEdicao.textContent = 'Editar';
+    botaoEdicao.addEventListener('click', () => editarProduto(produto.id));
+
+    // Botão de exclusão
+    const botaoExclusao = document.createElement('button');
+    botaoExclusao.textContent = 'Excluir';
+    botaoExclusao.addEventListener('click', () => excluirProduto(produto.id));
+
+    novoElemento.appendChild(botaoEdicao);
+    novoElemento.appendChild(botaoExclusao);
+
+    listaProdutos.appendChild(novoElemento);
+  }
+
+        
+  async function fetchData() {
+    try {
+      const response = await fetch('http://localhost:3003/api/produtos');
+      if (!response.ok) {
+        throw new Error(`Erro na solicitação: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      console.log('Dados recebidos do backend:', data);
+    } catch (error) {
+      console.error('Erro:', error);
+    }
+  }
+
   

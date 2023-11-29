@@ -1,4 +1,11 @@
 /* Estilos personalizados */
+h1{
+    font-size: 2rem;
+    margin-top: 10px;
+    color: white;
+    margin-top: 10px;
+    text-align: left;
+}
 header {
   background-color: #7b331b;
   padding-top: 20px;

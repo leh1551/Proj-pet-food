@@ -21,11 +21,9 @@ body {
   color: white;
   margin-top: 10px;
   text-align: left;
-
 }
 
 .imagem-logo{
-  border-radius: 50%;
   float: right;
   width: auto;
   max-width: 100px;

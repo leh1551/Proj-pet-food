@@ -2,35 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Selecionar Produto</title>
-  <link rel="stylesheet" href="styleselecionarpedido.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo a Pet Food!</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleselecionarpedido.css"> 
 </head>
 
 <body>
-  <header class="header">
-    <div class="btns">
-      
-      <button id="cart-button">
-        <i class="fas fa-shopping-cart"></i> Sacola
-        <span id="cart-count">0</span>
-      </button>
-    </div>
 
-    <h1 class="petfood">Pet Food</h1>
-    <img class="imagem-logo" src="imagens/imagem.jpg" alt="">
-
-    <div class="search">
-      <form>
-        <input type="text" class="search__input" id="busca" placeholder="Buscar...">
-        <button class="button" type="submit">Buscar</button>
-      </form>
-    </div>
-  </header>
-
-  <img class="produto" src="imagens/sapo.webp" alt="">
+    <header class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h1>Pet food</h1>
+                </div>
+                <div class="col-md-4">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="col-md-4 text-right">                  
+                    <img src="imagens/imagem.jpg" alt="Logo do Site" style="max-width: 100px; margin-left: 10px;">
+                </div>
+            </div>
+        </div>
+    </header>
 
   <div class="produtoselecionado">
     <h1 class="selec-prod">Selecionar Produto</h1>
@@ -40,6 +38,14 @@
     <label for="produto">Produto Selecionado:</label>
     <select id="produto" name="produto">
       <option value="produto1">Grilo preto pacote com 10uni.</option>
+      <option value="produto2">Gafanhato pacote com 10uni.</option>
+      <option value="produto3">Bicho da seda com 10uni.</option>
+      <option value="produto4">Rato cinza com 10uni.</option>
+      <option value="produto5">Camundongo pacote com 10uni.</option>
+      <option value="produto6">Sapo pacote com 10uni.</option>
+      <option value="produto7">Ração para macacos.</option>
+      <option value="produto8">Capim</option>
+      <option value="produto8">Feno</option>
     </select>
     <br><br>
     <label for="quantidade">Quantidade:</label>
@@ -48,7 +54,8 @@
     <label for="precoPorItem">Preço por Item (R$):</label>
     <input type="number" step="0.01" id="precoPorItem" value="25.00" oninput="calcularTotal()">
     <p id="total">Total: R$ 0.00</p>
-    <button id="btn-sacola">Adicionar à Sacola</button>
+    <a href="finalizaçao.html" id="btn-sacola">Comprar produto</a>
+    <br><br>
   </div>
 
   <div class="avaliar-produto">
